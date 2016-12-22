@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-22T03:59:17.117Z</updated>
+  <updated>2016-12-22T04:05:33.203Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,21 +20,21 @@
     <link href="http://yoursite.com/2016/12/21/JustMeet/"/>
     <id>http://yoursite.com/2016/12/21/JustMeet/</id>
     <published>2016-12-21T09:52:09.000Z</published>
-    <updated>2016-12-22T03:59:17.117Z</updated>
+    <updated>2016-12-22T04:05:33.203Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>&#x4F60;&#x89C1;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x89C1;&#x6211;<br>&#x6211;&#x5C31;&#x5728;&#x90A3;&#x91CC;<br>&#x4E0D;&#x60B2; &#x4E0D;&#x559C; </p>
+    <content type="html"><![CDATA[<img src="/2016/12/21/JustMeet/justMeet.jpg" class="full-image" alt="alt" title="&#x4ED3;&#x592E;&#x5609;&#x63AA;">
+<blockquote class="blockquote-center"><p>&#x4F60;&#x89C1;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x89C1;&#x6211;<br>&#x6211;&#x5C31;&#x5728;&#x90A3;&#x91CC;<br>&#x4E0D;&#x60B2; &#x4E0D;&#x559C; </p>
 <p>&#x4F60;&#x5FF5;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x5FF5;&#x6211;<br>&#x60C5;&#x5C31;&#x5728;&#x90A3;&#x91CC;<br>&#x4E0D;&#x6765; &#x4E0D;&#x53BB; </p>
 <p>&#x4F60;&#x7231;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x7231;&#x6211;<br>&#x7231;&#x5C31;&#x5728;&#x90A3;&#x91CC;<br>&#x4E0D;&#x589E; &#x4E0D;&#x51CF; </p>
 <p>&#x4F60;&#x8DDF;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x8DDF;&#x6211;<br>&#x6211;&#x7684;&#x624B;&#x5C31;&#x5728;&#x4F60;&#x624B;&#x91CC;<br>&#x4E0D;&#x820D;&#x4E0D;&#x5F03; </p>
 <p>&#x6765;&#x6211;&#x7684;&#x6000;&#x91CC;&#xFF0C; &#x6216;&#x8005;<br>&#x8BA9;&#x6211;&#x4F4F;&#x8FDB;&#x4F60;&#x7684;&#x5FC3;&#x91CC;<br>&#x9ED8;&#x7136;&#x76F8;&#x7231;&#x3000;&#x5BC2;&#x9759;&#x6B22;&#x559C;</p>
 </blockquote>
-<blockquote class="blockquote-center"><p>&#x4ED3;&#x592E;&#x5609;&#x63AA;</p>
-</blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;&amp;#x4F60;&amp;#x89C1;&amp;#xFF0C;&amp;#x6216;&amp;#x8005;&amp;#x4E0D;&amp;#x89C1;&amp;#x6211;&lt;br&gt;&amp;#x6211;&amp;#x5C31;&amp;#x5728;&amp;#x90A3
+      &lt;img src=&quot;/2016/12/21/JustMeet/justMeet.jpg&quot; class=&quot;full-image&quot; alt=&quot;alt&quot; title=&quot;&amp;#x4ED3;&amp;#x592E;&amp;#x5609;&amp;#x63AA;&quot;&gt;
+&lt;blockquote class=&quot;block
     
     </summary>
     
@@ -93,7 +93,7 @@
     <link href="http://yoursite.com/2016/12/09/hexo-git-config/"/>
     <id>http://yoursite.com/2016/12/09/hexo-git-config/</id>
     <published>2016-12-09T09:00:24.000Z</published>
-    <updated>2016-12-12T03:57:19.720Z</updated>
+    <updated>2016-12-22T04:03:35.353Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>&#x4E00;&#x76F4;&#x60F3;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x7231;&#x597D;&#x5E03;&#x5C40;&#x7684;&#x535A;&#x5BA2;&#x7F51;&#x7AD9;&#xFF0C;&#x53EA;&#x5230;&#x9047;&#x5230;&#x4F60;&#x2014;&#x2014;hexo&#xFF01;&#x5BF9;&#x4E8E;&#x4E0D;&#x64C5;&#x957F;&#x642D;&#x73AF;&#x5883;&#x7684;&#x6211;&#xFF0C;&#x5728;&#x540C;&#x4E8B;&#x5F97;&#x5E2E;&#x5FD9;&#x4E0B;&#xFF0C;&#x5FD9;&#x6D3B;&#x4E86;&#x4E00;&#x4E0A;&#x5348;&#xFF0C;&#x7EC8;&#x4E8E;&#x521D;&#x89C1;&#x89C4;&#x6A21;&#x3002;&#x60F3;&#x5199;&#x7684;&#x4E1C;&#x897F;&#x592A;&#x591A;&#xFF0C;&#x4F46;&#x6211;&#x611F;&#x89C9;&#x8FD8;&#x662F;&#x5148;&#x804A;&#x804A;&#x6211;&#x662F;&#x600E;&#x4E48;&#x6298;&#x817E;&#x597D;&#x8FD9;&#x4E2A;&#x73AF;&#x5883;&#x6EF4;&#x2026;&#x2026;</p>
 </blockquote>
@@ -107,9 +107,8 @@
 <h3 id="7-hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"><a href="#7-hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;" class="headerlink" title="7.hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"></a>7.hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</h3><p>&#x4F5C;&#x7528;&#xFF1A;&#x628A;&#x672C;&#x5730;&#x7684;hexo&#x751F;&#x4EA7;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x63D0;&#x4EA4;&#x5230;github&#x4E0A;&#x53BB;<br>&#x6CE8;&#x610F;&#xFF1A;&#x2013;save&#x8981;&#x52A0;&#x4E0A;&#xFF0C;&#x4E0D;&#x7136;&#x4F1A;&#x62A5;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;git&#x6216;&#x627E;&#x4E0D;&#x5230;git<br><blockquote><p>npm install hexo-deployer-git &#x2013;save</p>
 </blockquote></p>
 <h3 id="8-&#x5173;&#x8054;github"><a href="#8-&#x5173;&#x8054;github" class="headerlink" title="8.&#x5173;&#x8054;github"></a>8.&#x5173;&#x8054;github</h3><p>&#x5728;hexo&#x7684;&#x6839;&#x76EE;&#x5F55;&#x91CC;&#xFF0C;&#x6253;&#x5F00;_config.yml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x62C9;&#x5230;&#x6700;&#x540E;&#xFF0C;&#x4FEE;&#x6539;&#x5982;&#x4E0B;&#x90E8;&#x5206;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;<br><img src="/2016/12/09/hexo-git-config/4.png" alt="&#x201C;&#x5173;&#x8054;git&#x914D;&#x7F6E;&#x201D;"> </p>
-<h3 id="9-&#x6DFB;&#x52A0;ssh-key"><a href="#9-&#x6DFB;&#x52A0;ssh-key" class="headerlink" title="9.&#x6DFB;&#x52A0;ssh key"></a>9.&#x6DFB;&#x52A0;ssh key</h3><p>&#x4E3A;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x5230;github&#x4E0A;&#x90FD;&#x9700;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x6DFB;&#x52A0;ssh key&#x5230;Github&#xFF0C;&#x5728;git&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;<br>&#x751F;&#x6210;ssh key,&#x6309;&#x7167;&#x56FE;&#x4E2D;&#x753B;&#x6A59;&#x8272;&#x7EBF;&#x6846;&#x6B65;&#x9AA4;&#x952E;&#x5165;<br><img src="/2016/12/09/hexo-git-config/5.png" alt="&#x201C;&#x751F;&#x4EA7;ssh_key&#x201D;"><br>&#x6DFB;&#x52A0;ssh key&#x5230;Github&#xFF0C;&#x628A;id_rsa.pub&#x91CC;&#x7684;&#x5185;&#x5BB9;&#x7C98;&#x8D34;&#x5230;&#x4E0B;&#x56FE;&#x7684;key&#x4E2D;&#xFF0C;&#x4FDD;&#x5B58;&#x5373;&#x53EF;<br><img src="/2016/12/09/hexo-git-config/1.png" alt="&#x201C;ssh_key&#x201D;"> </p>
-<blockquote><p>ok&#xFF01;&#x5230;&#x6B64;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x7ED3;&#x675F;&#xFF0C;&#x8BBF;&#x95EE;&#x4EE5;&#x4E0B;&#x57DF;&#x540D;&#xFF0C;&#x5C31;&#x80FD;&#x770B;&#x5230;Hello World&#x5566;&#xFF01;&#x7A0D;&#x540E;&#x4F1A;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;hexo&#x57FA;&#x4E8E;Markdown&#x7684;&#x4E00;&#x4E0B;&#x547D;&#x4EE4;&#x4E0E;&#x89C4;&#x5219;&#xFF0C;&#x4EE5;&#x53CA;hexo&#x4E3B;&#x9898;&#x3001;<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="external">&#x56FE;&#x7247;&#x7B49;&#x9759;&#x6001;&#x8D44;&#x6E90;</a>&#x3001;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x7B49;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x7167;<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo&#x5B98;&#x7F51;</a></p>
-</blockquote>
+<h3 id="9-&#x6DFB;&#x52A0;ssh-key"><a href="#9-&#x6DFB;&#x52A0;ssh-key" class="headerlink" title="9.&#x6DFB;&#x52A0;ssh key"></a>9.&#x6DFB;&#x52A0;ssh key</h3><p>&#x4E3A;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x5230;github&#x4E0A;&#x90FD;&#x9700;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x6DFB;&#x52A0;ssh key&#x5230;Github&#xFF0C;&#x5728;git&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;<br>&#x751F;&#x6210;ssh key,&#x6309;&#x7167;&#x56FE;&#x4E2D;&#x753B;&#x6A59;&#x8272;&#x7EBF;&#x6846;&#x6B65;&#x9AA4;&#x952E;&#x5165;<br><img src="/2016/12/09/hexo-git-config/5.png" alt="&#x201C;&#x751F;&#x4EA7;ssh_key&#x201D;"><br>&#x6DFB;&#x52A0;ssh key&#x5230;Github&#xFF0C;&#x628A;id_rsa.pub&#x91CC;&#x7684;&#x5185;&#x5BB9;&#x7C98;&#x8D34;&#x5230;&#x4E0B;&#x56FE;&#x7684;key&#x4E2D;&#xFF0C;&#x4FDD;&#x5B58;&#x5373;&#x53EF;<br><img src="/2016/12/09/hexo-git-config/1.png" alt="&#x201C;ssh_key&#x201D;"><br><blockquote><p>ok&#xFF01;&#x5230;&#x6B64;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x7ED3;&#x675F;&#xFF0C;&#x8BBF;&#x95EE;&#x4EE5;&#x4E0B;&#x57DF;&#x540D;&#xFF0C;&#x5C31;&#x80FD;&#x770B;&#x5230;Hello World&#x5566;&#xFF01;&#x7A0D;&#x540E;&#x4F1A;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;hexo&#x57FA;&#x4E8E;Markdown&#x7684;&#x4E00;&#x4E0B;&#x547D;&#x4EE4;&#x4E0E;&#x89C4;&#x5219;&#xFF0C;&#x4EE5;&#x53CA;hexo&#x4E3B;&#x9898;&#x3001;<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="external">&#x56FE;&#x7247;&#x7B49;&#x9759;&#x6001;&#x8D44;&#x6E90;</a>&#x3001;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x7B49;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x7167;<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo&#x5B98;&#x7F51;</a></p>
+</blockquote></p>
 ]]></content>
     
     <summary type="html">
