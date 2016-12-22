@@ -1,362 +1,60 @@
-<!doctype html>
-
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yuyaoxia&#39;s Blog</title>
   
-
-
-<html class="theme-next pisces use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
+  <link href="/atom.xml" rel="self"/>
   
+  <link href="http://yoursite.com/"/>
+  <updated>2016-12-22T03:59:17.117Z</updated>
+  <id>http://yoursite.com/</id>
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
+  <author>
+    <name>yuyaoxia</name>
+    
+  </author>
   
+  <generator uri="http://hexo.io/">Hexo</generator>
   
-  
-  
-
-  
+  <entry>
+    <title>&#39;你见或者不见我&#39;</title>
+    <link href="http://yoursite.com/2016/12/21/JustMeet/"/>
+    <id>http://yoursite.com/2016/12/21/JustMeet/</id>
+    <published>2016-12-21T09:52:09.000Z</published>
+    <updated>2016-12-22T03:59:17.117Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>&#x4F60;&#x89C1;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x89C1;&#x6211;<br>&#x6211;&#x5C31;&#x5728;&#x90A3;&#x91CC;<br>&#x4E0D;&#x60B2; &#x4E0D;&#x559C; </p>
+<p>&#x4F60;&#x5FF5;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x5FF5;&#x6211;<br>&#x60C5;&#x5C31;&#x5728;&#x90A3;&#x91CC;<br>&#x4E0D;&#x6765; &#x4E0D;&#x53BB; </p>
+<p>&#x4F60;&#x7231;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x7231;&#x6211;<br>&#x7231;&#x5C31;&#x5728;&#x90A3;&#x91CC;<br>&#x4E0D;&#x589E; &#x4E0D;&#x51CF; </p>
+<p>&#x4F60;&#x8DDF;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x8DDF;&#x6211;<br>&#x6211;&#x7684;&#x624B;&#x5C31;&#x5728;&#x4F60;&#x624B;&#x91CC;<br>&#x4E0D;&#x820D;&#x4E0D;&#x5F03; </p>
+<p>&#x6765;&#x6211;&#x7684;&#x6000;&#x91CC;&#xFF0C; &#x6216;&#x8005;<br>&#x8BA9;&#x6211;&#x4F4F;&#x8FDB;&#x4F60;&#x7684;&#x5FC3;&#x91CC;<br>&#x9ED8;&#x7136;&#x76F8;&#x7231;&#x3000;&#x5BC2;&#x9759;&#x6B22;&#x559C;</p>
+</blockquote>
+<blockquote class="blockquote-center"><p>&#x4ED3;&#x592E;&#x5609;&#x63AA;</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;&amp;#x4F60;&amp;#x89C1;&amp;#xFF0C;&amp;#x6216;&amp;#x8005;&amp;#x4E0D;&amp;#x89C1;&amp;#x6211;&lt;br&gt;&amp;#x6211;&amp;#x5C31;&amp;#x5728;&amp;#x90A3
+    
+    </summary>
+    
+      <category term="诗词" scheme="http://yoursite.com/categories/%E8%AF%97%E8%AF%8D/"/>
     
     
-  
-
-  
+      <category term="诗词" scheme="http://yoursite.com/tags/%E8%AF%97%E8%AF%8D/"/>
     
-      
+      <category term="仓央嘉措" scheme="http://yoursite.com/tags/%E4%BB%93%E5%A4%AE%E5%98%89%E6%8E%AA/"/>
     
-
+  </entry>
+  
+  <entry>
+    <title>HELLO,AOP!</title>
+    <link href="http://yoursite.com/2016/12/16/aop/"/>
+    <id>http://yoursite.com/2016/12/16/aop/</id>
+    <published>2016-12-16T09:22:56.000Z</published>
+    <updated>2016-12-21T09:28:30.116Z</updated>
     
-  
-
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="java,基础," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Yuyaoxia's Blog" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="&amp;#x6982;&amp;#x5FF5;&amp;#x3010;AOP&amp;#xFF08;Aspect Orient Programming&amp;#xFF09;&amp;#x9762;&amp;#x5411;&amp;#x5207;&amp;#x9762;&amp;#x7F16;&amp;#x7A0B;&amp;#x3011;
-&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A;&amp;#x5728;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#xFF0C;&amp;#x52A8;&amp;#x">
-<meta property="og:type" content="article">
-<meta property="og:title" content="HELLO,AOP!">
-<meta property="og:url" content="http://yoursite.com/2016/12/16/aop/index.html">
-<meta property="og:site_name" content="Yuyaoxia's Blog">
-<meta property="og:description" content="&amp;#x6982;&amp;#x5FF5;&amp;#x3010;AOP&amp;#xFF08;Aspect Orient Programming&amp;#xFF09;&amp;#x9762;&amp;#x5411;&amp;#x5207;&amp;#x9762;&amp;#x7F16;&amp;#x7A0B;&amp;#x3011;
-&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A;&amp;#x5728;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#xFF0C;&amp;#x52A8;&amp;#x">
-<meta property="og:updated_time" content="2016-12-21T09:28:30.116Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HELLO,AOP!">
-<meta name="twitter:description" content="&amp;#x6982;&amp;#x5FF5;&amp;#x3010;AOP&amp;#xFF08;Aspect Orient Programming&amp;#xFF09;&amp;#x9762;&amp;#x5411;&amp;#x5207;&amp;#x9762;&amp;#x7F16;&amp;#x7A0B;&amp;#x3011;
-&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A;&amp;#x5728;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#xFF0C;&amp;#x52A8;&amp;#x">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: '博主'
-    }
-  };
-</script>
-
-  <title> HELLO,AOP! | Yuyaoxia's Blog </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-right page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Yuyaoxia's Blog</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-  <p class="site-subtitle"></p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="#" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
-</nav>
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                HELLO,AOP!
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-16T17:22:56+08:00" content="2016-12-16">
-              2016-12-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/java基础/" itemprop="url" rel="index">
-                    <span itemprop="name">java基础</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h3 id="&#x6982;&#x5FF5;&#x3010;AOP&#xFF08;Aspect-Orient-Programming&#xFF09;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#x3011;"><a href="#&#x6982;&#x5FF5;&#x3010;AOP&#xFF08;Aspect-Orient-Programming&#xFF09;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#x3011;" class="headerlink" title="&#x6982;&#x5FF5;&#x3010;AOP&#xFF08;Aspect Orient Programming&#xFF09;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#x3011;"></a>&#x6982;&#x5FF5;&#x3010;AOP&#xFF08;Aspect Orient Programming&#xFF09;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#x3011;</h3><blockquote>
+    <content type="html"><![CDATA[<h3 id="&#x6982;&#x5FF5;&#x3010;AOP&#xFF08;Aspect-Orient-Programming&#xFF09;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#x3011;"><a href="#&#x6982;&#x5FF5;&#x3010;AOP&#xFF08;Aspect-Orient-Programming&#xFF09;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#x3011;" class="headerlink" title="&#x6982;&#x5FF5;&#x3010;AOP&#xFF08;Aspect Orient Programming&#xFF09;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#x3011;"></a>&#x6982;&#x5FF5;&#x3010;AOP&#xFF08;Aspect Orient Programming&#xFF09;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#x3011;</h3><blockquote>
 <p>&#x5B9A;&#x4E49;&#xFF1A;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x52A8;&#x6001;&#x5730;&#x5C06;&#x4EE3;&#x7801;&#x5207;&#x5165;&#x5230;&#x7C7B;&#x7684;&#x6307;&#x5B9A;&#x65B9;&#x6CD5;&#x3001;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x4E0A;&#x7684;&#x7F16;&#x7A0B;&#x601D;&#x60F3;&#x5C31;&#x662F;&#x9762;&#x5411;&#x5207;&#x9762;&#x7684;&#x7F16;&#x7A0B;&#x3002;</p>
 </blockquote>
 <p>&#x7406;&#x89E3;&#xFF1A;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#xFF08;OOP&#xFF09;&#x662F;&#x4ECE;&#x9759;&#x6001;&#x89D2;&#x5EA6;&#x8003;&#x8651;&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;&#xFF0C;&#x9762;&#x5411;&#x5207;&#x9762;&#x7F16;&#x7A0B;&#xFF08;AOP&#xFF09;&#x662F;&#x4ECE;&#x52A8;&#x6001;&#x89D2;&#x5EA6;&#x8003;&#x8651;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x3002;</p>
@@ -373,475 +71,87 @@
 <h3 id="&#x793A;&#x4F8B;"><a href="#&#x793A;&#x4F8B;" class="headerlink" title="&#x793A;&#x4F8B;"></a>&#x793A;&#x4F8B;</h3><h4 id="1&#x3001;&#x6CE8;&#x89E3;&#x6CD5;"><a href="#1&#x3001;&#x6CE8;&#x89E3;&#x6CD5;" class="headerlink" title="1&#x3001;&#x6CE8;&#x89E3;&#x6CD5;"></a>1&#x3001;&#x6CE8;&#x89E3;&#x6CD5;</h4><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">package com.xxx.aop;    </div><div class="line">    </div><div class="line">import org.aspectj.lang.ProceedingJoinPoint;    </div><div class="line">import org.aspectj.lang.annotation.Around;    </div><div class="line">import org.aspectj.lang.annotation.Aspect;    </div><div class="line">import org.aspectj.lang.annotation.Pointcut;    </div><div class="line">import org.slf4j.Logger;    </div><div class="line">import org.slf4j.LoggerFactory;    </div><div class="line">import org.springframework.stereotype.Component;    </div><div class="line">    </div><div class="line">/** </div><div class="line"> *  </div><div class="line"> * &#x529F;&#x80FD;&#x63CF;&#x8FF0;: &#x76D1;&#x63A7;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x65F6;&#x95F4; </div><div class="line"> * @author yyx </div><div class="line"> */   </div><div class="line">@Aspect    </div><div class="line">@Component    </div><div class="line">public class PerformenceMonitor {    </div><div class="line">        </div><div class="line">    private static final Logger logger = LoggerFactory.getLogger(getClass());    </div><div class="line">    /**  </div><div class="line">     * &#x76D1;&#x63A7;com.xxx.assp.web.service&#x5305;&#x53CA;&#x5176;&#x5B50;&#x5305;&#x7684;&#x6240;&#x6709;public&#x65B9;&#x6CD5;  </div><div class="line">     * &lt;&#x529F;&#x80FD;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&gt;  </div><div class="line">     * @see [&#x7C7B;&#x3001;&#x7C7B;#&#x65B9;&#x6CD5;&#x3001;&#x7C7B;#&#x6210;&#x5458;]  </div><div class="line">     */    </div><div class="line">    @Pointcut(&quot;execution(* com.xxx.assp.web.service..*.*(..))&quot;)      </div><div class="line">    private void pointCutMethod() {      </div><div class="line">    }      </div><div class="line">    </div><div class="line">     //&#x58F0;&#x660E;&#x73AF;&#x7ED5;&#x901A;&#x77E5;      </div><div class="line">    @Around(&quot;pointCutMethod()&quot;)      </div><div class="line">    public Object doAround(ProceedingJoinPoint pjp) throws Throwable {      </div><div class="line">        long begin = System.nanoTime();    </div><div class="line">        Object o = pjp.proceed();      </div><div class="line">        long end = System.nanoTime();    </div><div class="line">        logger.debug(&quot;{}:{}&quot;,pjp.getTarget().getClass()+&quot;.&quot;+pjp.getSignature().getName(),(end-begin)/1000000);    </div><div class="line">        return o;      </div><div class="line">    }      </div><div class="line">}</div></pre></td></tr></table></figure>
 <h4 id="2&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6CD5;"><a href="#2&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6CD5;" class="headerlink" title="2&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6CD5;"></a>2&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6CD5;</h4><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line">package com.xxx.assp.service.util;  </div><div class="line">  </div><div class="line">import org.aspectj.lang.ProceedingJoinPoint;  </div><div class="line">import org.slf4j.Logger;  </div><div class="line">import org.slf4j.LoggerFactory;  </div><div class="line">  </div><div class="line">import com.xxx.assp.common.AsspException;  </div><div class="line">import com.xxx.assp.common.MessageDTO;  </div><div class="line">import com.xxx.assp.common.ResponseDTO;  </div><div class="line">import com.xxx.assp.util.filter.LogFilter;  </div><div class="line">  </div><div class="line">/** </div><div class="line"> * &#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x5207;&#x9762; &lt;br&gt; </div><div class="line"> * </div><div class="line"> * &lt;p&gt; </div><div class="line"> * &#x529F;&#x80FD;&#xFF1A; </div><div class="line"> * &lt;/p&gt; </div><div class="line"> * &lt;ul&gt; </div><div class="line"> * &lt;li&gt;&#x6253;&#x5370;&#x65E5;&#x5FD7;&lt;/li&gt; </div><div class="line"> * &lt;li&gt;&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x53CA;&#x6807;&#x51C6;&#x5316;&lt;/li&gt; </div><div class="line"> * &lt;li&gt;&#x62A5;&#x8B66;&#xFF08;&#x77ED;&#x4FE1;&#x3001;&#x90AE;&#x4EF6;&#xFF09;&lt;/li&gt; </div><div class="line"> * &lt;li&gt;&#x63A5;&#x53E3;&#x9891;&#x7387;&#x63A7;&#x5236;&lt;/li&gt; </div><div class="line"> * &lt;li&gt;&#x63A5;&#x53E3;&#x9274;&#x6743;&lt;/li&gt; </div><div class="line"> * &lt;li&gt;&#x6027;&#x80FD;&#x76D1;&#x63A7;&lt;/li&gt; </div><div class="line"> * &lt;/ul&gt; </div><div class="line"> *  </div><div class="line"> * @author  </div><div class="line"> */  </div><div class="line">public class CommonInterceptor {  </div><div class="line">    private static Logger logger = LoggerFactory.getLogger(CommonInterceptor.class);  </div><div class="line">  </div><div class="line">    public Object around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {  </div><div class="line">  </div><div class="line">        // &#x4ECE;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x4E2D;&#x8BFB;&#x53D6;&#x4E8B;&#x52A1;ID  </div><div class="line">        String callId = LogFilter.getCallId();  </div><div class="line">  </div><div class="line">        MessageDTO message = new MessageDTO();  </div><div class="line">        message.setCallId(callId);  </div><div class="line">        Object result = null;  </div><div class="line">        try {  </div><div class="line">            long start = System.currentTimeMillis();  </div><div class="line">            message.setTimestamp(start);  </div><div class="line">            result = proceedingJoinPoint.proceed(); // &#x5177;&#x4F53;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5904;&#x7406;  </div><div class="line">            long end = System.currentTimeMillis();  </div><div class="line">            message.setCost(end - start);  </div><div class="line">            ResponseDTO base = (ResponseDTO) result;  </div><div class="line">            base.setMessage(message);  </div><div class="line">            MessageUtil.wrapSuccess(base);  </div><div class="line">        } catch (Exception e) {  </div><div class="line">            ResponseDTO tmp = new ResponseDTO();  </div><div class="line">            tmp.setMessage(message);  </div><div class="line">            result = tmp;  </div><div class="line">            //&#x8BBE;&#x7F6E;&#x5931;&#x8D25;&#x5C5E;&#x6027;  </div><div class="line">            if (e instanceof AsspException) {  </div><div class="line">                MessageUtil.wrapFailure((ResponseDTO) result, (AsspException) e);  </div><div class="line">            } else {  </div><div class="line">                MessageUtil.wrapFailure((ResponseDTO) result, e, Constant.SERVICE_EXCEPTION_OF_AOP, new Object[] {  </div><div class="line">                                                                                                                   e.getMessage()  </div><div class="line">                });  </div><div class="line">            }  </div><div class="line">        }  </div><div class="line">        logger.info(&quot;cost={}ms&quot;, message.getCost());  </div><div class="line">        return result;  </div><div class="line">    }  </div><div class="line">}</div></pre></td></tr></table></figure>
 <p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:aop=&quot;http://www.springframework.org/schema/aop&quot; xmlns:p=&quot;http://www.springframework.org/schema/p&quot;  </div><div class="line">    xmlns:context=&quot;http://www.springframework.org/schema/context&quot; xmlns:jee=&quot;http://www.springframework.org/schema/jee&quot;  </div><div class="line">    xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans  </div><div class="line">        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  </div><div class="line">        http://www.springframework.org/schema/aop  </div><div class="line">        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd  </div><div class="line">        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd  </div><div class="line">        http://www.springframework.org/schema/context  </div><div class="line">         http://www.springframework.org/schema/context/spring-context-3.0.xsd&quot;&gt;  </div><div class="line">  </div><div class="line">    &lt;!-- hessian&#x7EDF;&#x4E00;&#x5F02;&#x5E38;&#x5904;&#x7406; --&gt;  </div><div class="line">    &lt;bean id=&quot;asspInterceptor&quot; class=&quot;com.xxx.assp.service.util.CommonInterceptor&quot;&gt;&lt;/bean&gt;&lt;!--&#x5207;&#x9762;--&gt;  </div><div class="line">    &lt;aop:config&gt;  </div><div class="line">        &lt;aop:pointcut id=&quot;asspPointcut&quot; expression=&quot;execution(public * com.xxx.assp.service.impl..*.*(..))&quot; /&gt;&lt;!--&#x5207;&#x70B9;--&gt;  </div><div class="line">        &lt;aop:aspect id=&quot;asspAspect&quot; ref=&quot;asspInterceptor&quot;&gt;  </div><div class="line">            &lt;aop:around method=&quot;around&quot; pointcut-ref=&quot;asspPointcut&quot; /&gt;  </div><div class="line">        &lt;/aop:aspect&gt;  </div><div class="line">    &lt;/aop:config&gt;  </div><div class="line">&lt;/beans&gt;</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-
-    <div>
-      
-        
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/java/" rel="tag">#java</a>
-          
-            <a href="/tags/基础/" rel="tag">#基础</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/12/09/hexo-git-config/" rel="next" title="hexo+github——很不错的独立博客！">
-                <i class="fa fa-chevron-left"></i> hexo+github——很不错的独立博客！
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/21/JustMeet/" rel="prev" title="'你见或者不见我'">
-                '你见或者不见我' <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
+]]></content>
     
-  </div>
-
-
-        </div>
-        
-          
+    <summary type="html">
+    
+      &lt;h3 id=&quot;&amp;#x6982;&amp;#x5FF5;&amp;#x3010;AOP&amp;#xFF08;Aspect-Orient-Programming&amp;#xFF09;&amp;#x9762;&amp;#x5411;&amp;#x5207;&amp;#x9762;&amp;#x7F16;&amp;#x7A0B;&amp;#x3011;&quot;&gt;&lt;a hre
+    
+    </summary>
+    
+      <category term="java基础" scheme="http://yoursite.com/categories/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="yuyaoxia" />
-          <p class="site-author-name" itemprop="name">yuyaoxia</p>
-          <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/yuyaoxia/" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  GitHub
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/your-user-name" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://my.csdn.net/" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              Links
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://my.csdn.net/" title="CSDN" target="_blank">CSDN</a>
-                </li>
-              
-            </ul>
-          </div>
-        
-
-      </section>
-
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念【AOP（Aspect-Orient-Programming）面向切面编程】"><span class="nav-number">1.</span> <span class="nav-text">概念【AOP（Aspect Orient Programming）面向切面编程】</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AOP的优点"><span class="nav-number">2.</span> <span class="nav-text">AOP的优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用"><span class="nav-number">3.</span> <span class="nav-text">作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AOP的基本概念"><span class="nav-number">4.</span> <span class="nav-text">AOP的基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AOP的Advice类型"><span class="nav-number">5.</span> <span class="nav-text">AOP的Advice类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">6.</span> <span class="nav-text">示例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、注解法"><span class="nav-number">6.1.</span> <span class="nav-text">1、注解法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、配置文件法"><span class="nav-number">6.2.</span> <span class="nav-text">2、配置文件法</span></a></li></ol></li></ol></div>
-            
-          </div>
-        </section>
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
+  <entry>
+    <title>hexo+github——很不错的独立博客！</title>
+    <link href="http://yoursite.com/2016/12/09/hexo-git-config/"/>
+    <id>http://yoursite.com/2016/12/09/hexo-git-config/</id>
+    <published>2016-12-09T09:00:24.000Z</published>
+    <updated>2016-12-12T03:57:19.720Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>&#x4E00;&#x76F4;&#x60F3;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x7231;&#x597D;&#x5E03;&#x5C40;&#x7684;&#x535A;&#x5BA2;&#x7F51;&#x7AD9;&#xFF0C;&#x53EA;&#x5230;&#x9047;&#x5230;&#x4F60;&#x2014;&#x2014;hexo&#xFF01;&#x5BF9;&#x4E8E;&#x4E0D;&#x64C5;&#x957F;&#x642D;&#x73AF;&#x5883;&#x7684;&#x6211;&#xFF0C;&#x5728;&#x540C;&#x4E8B;&#x5F97;&#x5E2E;&#x5FD9;&#x4E0B;&#xFF0C;&#x5FD9;&#x6D3B;&#x4E86;&#x4E00;&#x4E0A;&#x5348;&#xFF0C;&#x7EC8;&#x4E8E;&#x521D;&#x89C1;&#x89C4;&#x6A21;&#x3002;&#x60F3;&#x5199;&#x7684;&#x4E1C;&#x897F;&#x592A;&#x591A;&#xFF0C;&#x4F46;&#x6211;&#x611F;&#x89C9;&#x8FD8;&#x662F;&#x5148;&#x804A;&#x804A;&#x6211;&#x662F;&#x600E;&#x4E48;&#x6298;&#x817E;&#x597D;&#x8FD9;&#x4E2A;&#x73AF;&#x5883;&#x6EF4;&#x2026;&#x2026;</p>
+</blockquote>
+<h3 id="1-&#x8D2D;&#x4E70;&#x57DF;&#x540D;"><a href="#1-&#x8D2D;&#x4E70;&#x57DF;&#x540D;" class="headerlink" title="1.&#x8D2D;&#x4E70;&#x57DF;&#x540D;"></a>1.&#x8D2D;&#x4E70;&#x57DF;&#x540D;</h3><p>&#x63A8;&#x8350;&#x963F;&#x91CC;&#x4E91;&#x3001;godaddy&#xFF0C;&#x5982;&#x679C;&#x4F01;&#x4E1A;&#x3001;&#x516C;&#x53F8;&#x5EFA;&#x8BAE;&#x963F;&#x91CC;&#x4E91;&#xFF0C;&#x81EA;&#x5DF1;&#x5199;&#x5199;&#x535A;&#x5BA2;godaddy&#x633A;&#x597D;&#xFF0C;&#x4E24;&#x8005;&#x4EF7;&#x683C;&#x76EE;&#x524D;&#x5DEE;&#x4E0D;&#x591A;&#x3002;</p>
+<h3 id="2-github&#x8D26;&#x53F7;"><a href="#2-github&#x8D26;&#x53F7;" class="headerlink" title="2.github&#x8D26;&#x53F7;"></a>2.github&#x8D26;&#x53F7;</h3><p>&#x7533;&#x8BF7;&#x4E00;&#x4E2A;github&#x8D26;&#x53F7;<br>&#x5EFA;&#x5B58;&#x50A8;&#x5E93;&#xFF1A;&#x4E0E;&#x4F60;&#x7528;&#x6237;&#x540D;&#x8981;&#x5BF9;&#x5E94;&#xFF0C;&#x4ED3;&#x5E93;&#x540D;&#x5FC5;&#x987B;&#x4E3A;&#x300E;your_user_name.github.io&#x300F;<br>&#x4F5C;&#x7528;&#xFF1A;&#x63D0;&#x4F9B;&#x8FDC;&#x7A0B;&#x521B;&#x5E93;&#x3001;&#x670D;&#x52A1;&#x5668;&#x3001;github pages&#xFF08;GitHub Pages&#x9ED8;&#x8BA4;&#x4E3A;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x5206;&#x914D;&#x4E86;&#x4E00;&#x4E2A;&#x4E8C;&#x7EA7;&#x57DF;&#x540D;&#x300E;your_user_name.github.com&#x300F;&#x6216;&#x300E;your_user_name.github.io&#x300F;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x4E70;&#x57DF;&#x540D;&#x3002;&#xFF09;</p>
+<h3 id="3-Node-js"><a href="#3-Node-js" class="headerlink" title="3.Node.js"></a>3.Node.js</h3><p>&#x4E0B;&#x8F7D;&#xFF1A;<a href="https://nodejs.org/en/download/" target="_blank" rel="external">node-v6.9.1-x64.msi</a><br>&#x5B89;&#x88C5;&#xFF1A;&#x4E00;&#x76F4;&#x201C;&#x4E0B;&#x4E00;&#x6B65;&#x201D;&#x5373;&#x53EF;<br>&#x4F5C;&#x7528;&#xFF1A;hexo&#x5B89;&#x88C5;&#x7684;&#x4F9D;&#x8D56;</p>
+<h3 id="4-Git&#x5BA2;&#x6237;&#x7AEF;"><a href="#4-Git&#x5BA2;&#x6237;&#x7AEF;" class="headerlink" title="4.Git&#x5BA2;&#x6237;&#x7AEF;"></a>4.Git&#x5BA2;&#x6237;&#x7AEF;</h3><p>&#x4E0B;&#x8F7D;&#xFF1A;<a href="https://git-scm.com/download/win" target="_blank" rel="external">PortableGit-2.11.0-64-bit.7z.exe</a>&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x7528;&#x7684;&#x662F;&#x4FBF;&#x643A;&#x7248;&#xFF01;<br>&#x5B89;&#x88C5;&#xFF1A;&#x4E00;&#x8DEF;&#x201C;&#x4E0B;&#x4E00;&#x6B65;&#x201D;<br>&#x914D;&#x7F6E;&#xFF1A;GIT_HOME&#xFF1A;D:\my_net\PortableGit&#xFF1B;path:%GIT_HOME%/bin</p>
+<h3 id="5-hexo"><a href="#5-hexo" class="headerlink" title="5.hexo"></a>5.hexo</h3><p>hexo&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Node.js&#x7684;&#x5FEB;&#x901F;&#x3001;&#x7B80;&#x5355;&#x548C;&#x5F3A;&#x5927;&#x7684;&#x535A;&#x5BA2;&#x6846;&#x67B6;&#xFF0C;&#x652F;&#x6301;Markdown&#x683C;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x751F;&#x6210;&#x6709;&#x5F88;&#x70AB;&#x4E3B;&#x9898;&#x7684;&#x9759;&#x6001;&#x7F51;&#x9875;&#xFF0C;&#x65B9;&#x4FBF;&#x6258;&#x7BA1;&#x5728;github&#x548C;Heroku&#x4E0A;&#x3002;<br><blockquote><p>&#x5B89;&#x88C5;&#xFF1A;npm install -g hexo<br>&#x521D;&#x59CB;&#x5316;&#x5230;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#xFF1A;hexo init <folder> &#x6216;&#x8005; &#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55;hexo init</folder></p>
+</blockquote></p>
+<h3 id="6-&#x57DF;&#x540D;&#x7ED1;&#x5B9A;"><a href="#6-&#x57DF;&#x540D;&#x7ED1;&#x5B9A;" class="headerlink" title="6.&#x57DF;&#x540D;&#x7ED1;&#x5B9A;"></a>6.&#x57DF;&#x540D;&#x7ED1;&#x5B9A;</h3><p>&#x767B;&#x5F55;&#x963F;&#x91CC;&#x4E91;&#x5230;&#x63A7;&#x5236;&#x53F0;&#xFF08;godaddy&#x4E5F;&#x4E00;&#x6837;&#xFF09;&#xFF1A;&#x9009;&#x62E9;&#x57DF;&#x540D;&#x2192;&#x70B9;&#x89E3;&#x6790;&#x2192;&#x6DFB;&#x52A0;&#x89E3;&#x6790;&#xFF0C;&#x7136;&#x540E;&#x5982;&#x4E0B;&#x56FE;&#x586B;&#x5199;&#xFF0C;&#x8BB0;&#x5F55;&#x503C;&#x5199;github&#x4ED3;&#x5E93;&#x540D;&#x300E;your_user_name.github.io&#x300F;&#x3002;<br><img src="/2016/12/09/hexo-git-config/2.png" alt="&#x201C;&#x57DF;&#x540D;&#x89E3;&#x6790;1&#x201D;"><br><img src="/2016/12/09/hexo-git-config/3.png" alt="&#x201C;&#x57DF;&#x540D;&#x89E3;&#x6790;2&#x201D;"> </p>
+<h3 id="7-hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"><a href="#7-hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;" class="headerlink" title="7.hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"></a>7.hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</h3><p>&#x4F5C;&#x7528;&#xFF1A;&#x628A;&#x672C;&#x5730;&#x7684;hexo&#x751F;&#x4EA7;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x63D0;&#x4EA4;&#x5230;github&#x4E0A;&#x53BB;<br>&#x6CE8;&#x610F;&#xFF1A;&#x2013;save&#x8981;&#x52A0;&#x4E0A;&#xFF0C;&#x4E0D;&#x7136;&#x4F1A;&#x62A5;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;git&#x6216;&#x627E;&#x4E0D;&#x5230;git<br><blockquote><p>npm install hexo-deployer-git &#x2013;save</p>
+</blockquote></p>
+<h3 id="8-&#x5173;&#x8054;github"><a href="#8-&#x5173;&#x8054;github" class="headerlink" title="8.&#x5173;&#x8054;github"></a>8.&#x5173;&#x8054;github</h3><p>&#x5728;hexo&#x7684;&#x6839;&#x76EE;&#x5F55;&#x91CC;&#xFF0C;&#x6253;&#x5F00;_config.yml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x62C9;&#x5230;&#x6700;&#x540E;&#xFF0C;&#x4FEE;&#x6539;&#x5982;&#x4E0B;&#x90E8;&#x5206;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;<br><img src="/2016/12/09/hexo-git-config/4.png" alt="&#x201C;&#x5173;&#x8054;git&#x914D;&#x7F6E;&#x201D;"> </p>
+<h3 id="9-&#x6DFB;&#x52A0;ssh-key"><a href="#9-&#x6DFB;&#x52A0;ssh-key" class="headerlink" title="9.&#x6DFB;&#x52A0;ssh key"></a>9.&#x6DFB;&#x52A0;ssh key</h3><p>&#x4E3A;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x5230;github&#x4E0A;&#x90FD;&#x9700;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x6DFB;&#x52A0;ssh key&#x5230;Github&#xFF0C;&#x5728;git&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;<br>&#x751F;&#x6210;ssh key,&#x6309;&#x7167;&#x56FE;&#x4E2D;&#x753B;&#x6A59;&#x8272;&#x7EBF;&#x6846;&#x6B65;&#x9AA4;&#x952E;&#x5165;<br><img src="/2016/12/09/hexo-git-config/5.png" alt="&#x201C;&#x751F;&#x4EA7;ssh_key&#x201D;"><br>&#x6DFB;&#x52A0;ssh key&#x5230;Github&#xFF0C;&#x628A;id_rsa.pub&#x91CC;&#x7684;&#x5185;&#x5BB9;&#x7C98;&#x8D34;&#x5230;&#x4E0B;&#x56FE;&#x7684;key&#x4E2D;&#xFF0C;&#x4FDD;&#x5B58;&#x5373;&#x53EF;<br><img src="/2016/12/09/hexo-git-config/1.png" alt="&#x201C;ssh_key&#x201D;"> </p>
+<blockquote><p>ok&#xFF01;&#x5230;&#x6B64;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x7ED3;&#x675F;&#xFF0C;&#x8BBF;&#x95EE;&#x4EE5;&#x4E0B;&#x57DF;&#x540D;&#xFF0C;&#x5C31;&#x80FD;&#x770B;&#x5230;Hello World&#x5566;&#xFF01;&#x7A0D;&#x540E;&#x4F1A;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;hexo&#x57FA;&#x4E8E;Markdown&#x7684;&#x4E00;&#x4E0B;&#x547D;&#x4EE4;&#x4E0E;&#x89C4;&#x5219;&#xFF0C;&#x4EE5;&#x53CA;hexo&#x4E3B;&#x9898;&#x3001;<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="external">&#x56FE;&#x7247;&#x7B49;&#x9759;&#x6001;&#x8D44;&#x6E90;</a>&#x3001;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x7B49;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x7167;<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo&#x5B98;&#x7F51;</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;&amp;#x4E00;&amp;#x76F4;&amp;#x60F3;&amp;#x62E5;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x53EF;&amp;#x4EE5;&amp;#x6309;&amp;#x7167;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x7231;&amp;#x59
+    
+    </summary>
+    
+      <category term="环境-工具" scheme="http://yoursite.com/categories/%E7%8E%AF%E5%A2%83-%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="安装，配置" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85%EF%BC%8C%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">yuyaoxia</span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
-  </div>
-
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/12/07/hello-world/"/>
+    <id>http://yoursite.com/2016/12/07/hello-world/</id>
+    <published>2016-12-07T02:28:48.691Z</published>
+    <updated>2016-12-07T02:28:48.694Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
   
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';                
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
-                            
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
-
-    // handle and trigger popup window;
-    $('.popup-trigger').mousedown(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-
-    });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
-
-  
-
-  
-
-  
-
-</body>
-</html>
+</feed>
