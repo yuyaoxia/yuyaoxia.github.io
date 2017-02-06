@@ -1549,7 +1549,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff2a41;
+  background: #ff943c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2135,6 +2135,16 @@ a.search-result {
 }
 body {
   background: #f5f7f9;
+}
+.img-logo {
+  max-width: 180px;
+  max-height: 196px;
+  display: block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
 }
 @media (min-width: 992px) {
   .full-image.full-image.full-image {

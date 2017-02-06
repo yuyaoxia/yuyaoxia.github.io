@@ -115,7 +115,10 @@
 <meta property="og:image" content="http://yoursite.com/2016/12/28/unitTest/mock1.png">
 <meta property="og:image" content="http://yoursite.com/2016/12/28/unitTest/mock2.png">
 <meta property="og:image" content="http://yoursite.com/2016/12/28/unitTest/assertTrue.png">
-<meta property="og:updated_time" content="2016-12-29T09:00:36.758Z">
+<meta property="og:image" content="http://yoursite.com/2016/12/28/unitTest/privateClass.png">
+<meta property="og:image" content="http://yoursite.com/2016/12/28/unitTest/mockClass.png">
+<meta property="og:image" content="http://yoursite.com/2016/12/28/unitTest/eg.png">
+<meta property="og:updated_time" content="2017-01-10T03:32:18.189Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Unit Testing】单元测试">
 <meta name="twitter:description" content="&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A;&amp;#x9488;&amp;#x5BF9;&amp;#x4E00;&amp;#x4E2A;&amp;#x88AB;&amp;#x6D4B;&amp;#x8BD5;&amp;#x7684;&amp;#x5355;&amp;#x5143;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x7ED9;&amp;#x5B9A;&amp;#x76F8;&amp;#x5173;&amp;#x8F93;&amp;#x5165;&amp;#xFF0C;&amp;#x9A8C;&amp;#x8BC1;">
@@ -367,6 +370,8 @@
 <p>&#x6821;&#x9A8C;&#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x6B21;&#x6570;<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@Test</div><div class="line">public void testVerifyTimes() {</div><div class="line">        <span class="built_in">list</span>.<span class="keyword">get</span>(<span class="number">0</span>);</div><div class="line">        verify(<span class="built_in">list</span>, <span class="keyword">times</span>(<span class="number">1</span>)).<span class="keyword">get</span>(<span class="number">0</span>);</div><div class="line">    }</div></pre></td></tr></table></figure></p>
 <p>verify&#x8FD8;&#x53EF;&#x4EE5;&#x6821;&#x9A8C;&#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x987A;&#x5E8F;&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
 <h3 id="&#x65AD;&#x8A00;"><a href="#&#x65AD;&#x8A00;" class="headerlink" title="&#x65AD;&#x8A00;"></a>&#x65AD;&#x8A00;</h3><p>assertTrue &#x9A8C;&#x8BC1;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E3A;true<br><img src="/2016/12/28/unitTest/assertTrue.png" alt="&#x201C;mock&#x201D;"> </p>
+<h3 id="&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;"><a href="#&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;" class="headerlink" title="&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;"></a>&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;</h3><h3 id="&#x7B2C;&#x4E09;&#x65B9;&#x8C03;&#x7528;"><a href="#&#x7B2C;&#x4E09;&#x65B9;&#x8C03;&#x7528;" class="headerlink" title="&#x7B2C;&#x4E09;&#x65B9;&#x8C03;&#x7528;"></a>&#x7B2C;&#x4E09;&#x65B9;&#x8C03;&#x7528;</h3><p>&#x4F8B;&#x5982;&#x8C03;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7684;rsf&#x63A5;&#x53E3;&#x6E90;&#x7801;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/12/28/unitTest/privateClass.png" alt="&#x201C;mock&#x201D;"><br>&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x4E2D;mock&#x7C7B;&#x53CA;&#x91CD;&#x5199;&#x7C7B;&#x4E2D;&#x65B9;&#x6CD5;&#xFF1A;<br><img src="/2016/12/28/unitTest/mockClass.png" alt="&#x201C;mock&#x201D;"> </p>
+<h3 id="&#x7EFC;&#x5408;&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><a href="#&#x7EFC;&#x5408;&#x4F7F;&#x7528;&#x793A;&#x4F8B;" class="headerlink" title="&#x7EFC;&#x5408;&#x4F7F;&#x7528;&#x793A;&#x4F8B;"></a>&#x7EFC;&#x5408;&#x4F7F;&#x7528;&#x793A;&#x4F8B;</h3><p><img src="/2016/12/28/unitTest/eg.png" alt="&#x201C;mock&#x201D;"> </p>
 
       
     </div>
@@ -475,7 +480,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -588,7 +593,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mockito-模拟测试环境框架"><span class="nav-number">1.</span> <span class="nav-text">Mockito 模拟测试环境框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打桩"><span class="nav-number">2.</span> <span class="nav-text">打桩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#verify"><span class="nav-number">3.</span> <span class="nav-text">verify</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#断言"><span class="nav-number">4.</span> <span class="nav-text">断言</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mockito-模拟测试环境框架"><span class="nav-number">1.</span> <span class="nav-text">Mockito 模拟测试环境框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打桩"><span class="nav-number">2.</span> <span class="nav-text">打桩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#verify"><span class="nav-number">3.</span> <span class="nav-text">verify</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#断言"><span class="nav-number">4.</span> <span class="nav-text">断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#私有方法使用"><span class="nav-number">5.</span> <span class="nav-text">私有方法使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三方调用"><span class="nav-number">6.</span> <span class="nav-text">第三方调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#综合使用示例"><span class="nav-number">7.</span> <span class="nav-text">综合使用示例</span></a></li></ol></div>
             
           </div>
         </section>
@@ -607,7 +612,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
