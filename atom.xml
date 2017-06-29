@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-06T05:57:24.124Z</updated>
+  <updated>2017-03-16T03:04:51.487Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring MVC--transaction</title>
+    <link href="http://yoursite.com/2017/03/14/transaction/"/>
+    <id>http://yoursite.com/2017/03/14/transaction/</id>
+    <published>2017-03-14T11:26:06.000Z</published>
+    <updated>2017-03-16T03:04:51.487Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>&#x907F;&#x514D;&#x61D2;&#x60F0;&#xFF0C;&#x6162;&#x6162;&#x5411;&#x524D;&#x8D70;&#x2026;&#x2026;</p>
+</blockquote>
+<p>&#x4E8B;&#x52A1;&#x5FC5;&#x987B;&#x670D;&#x4ECE;ISO/IEC&#x6240;&#x5236;&#x5B9A;&#x7684;ACID&#x539F;&#x5219;&#xFF1A;ACID&#x662F;&#x539F;&#x5B50;&#x6027;&#xFF08;atomicity&#xFF09;&#x3001;&#x4E00;&#x81F4;&#x6027;&#xFF08;consistency&#xFF09;&#x3001;&#x9694;&#x79BB;&#x6027;&#xFF08;isolation&#xFF09;&#x548C;&#x6301;&#x4E45;&#x6027;&#xFF08;durability&#xFF09;&#x7684;&#x7F29;&#x5199;</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;&amp;#x907F;&amp;#x514D;&amp;#x61D2;&amp;#x60F0;&amp;#xFF0C;&amp;#x6162;&amp;#x6162;&amp;#x5411;&amp;#x524D;&amp;#x8D70;&amp;#x2026;&amp;#x2026;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;#x4E8B
+    
+    </summary>
+    
+      <category term="java基础" scheme="http://yoursite.com/categories/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="springMVC" scheme="http://yoursite.com/tags/springMVC/"/>
+    
+  </entry>
   
   <entry>
     <title>solr安装</title>
@@ -45,9 +72,9 @@
       <category term="环境—工具" scheme="http://yoursite.com/categories/%E7%8E%AF%E5%A2%83%E2%80%94%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="安装，配置" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85%EF%BC%8C%E9%85%8D%E7%BD%AE/"/>
-    
       <category term="solr" scheme="http://yoursite.com/tags/solr/"/>
+    
+      <category term="安装，配置" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85%EF%BC%8C%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
@@ -187,7 +214,7 @@
     <link href="http://yoursite.com/2016/12/09/hexo-git-config/"/>
     <id>http://yoursite.com/2016/12/09/hexo-git-config/</id>
     <published>2016-12-09T09:00:24.000Z</published>
-    <updated>2016-12-29T09:46:27.186Z</updated>
+    <updated>2017-05-24T01:00:02.462Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>&#x4E00;&#x76F4;&#x60F3;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x7231;&#x597D;&#x5E03;&#x5C40;&#x7684;&#x535A;&#x5BA2;&#x7F51;&#x7AD9;&#xFF0C;&#x53EA;&#x5230;&#x9047;&#x5230;&#x4F60;&#x2014;&#x2014;hexo&#xFF01;&#x5BF9;&#x4E8E;&#x4E0D;&#x64C5;&#x957F;&#x642D;&#x73AF;&#x5883;&#x7684;&#x6211;&#xFF0C;&#x5728;&#x540C;&#x4E8B;&#x5F97;&#x5E2E;&#x5FD9;&#x4E0B;&#xFF0C;&#x5FD9;&#x6D3B;&#x4E86;&#x4E00;&#x4E0A;&#x5348;&#xFF0C;&#x7EC8;&#x4E8E;&#x521D;&#x89C1;&#x89C4;&#x6A21;&#x3002;&#x60F3;&#x5199;&#x7684;&#x4E1C;&#x897F;&#x592A;&#x591A;&#xFF0C;&#x4F46;&#x6211;&#x611F;&#x89C9;&#x8FD8;&#x662F;&#x5148;&#x804A;&#x804A;&#x6211;&#x662F;&#x600E;&#x4E48;&#x6298;&#x817E;&#x597D;&#x8FD9;&#x4E2A;&#x73AF;&#x5883;&#x6EF4;&#x2026;&#x2026;</p>
 </blockquote>
@@ -201,7 +228,7 @@
 <h3 id="6-&#x57DF;&#x540D;&#x7ED1;&#x5B9A;"><a href="#6-&#x57DF;&#x540D;&#x7ED1;&#x5B9A;" class="headerlink" title="6.&#x57DF;&#x540D;&#x7ED1;&#x5B9A;"></a>6.&#x57DF;&#x540D;&#x7ED1;&#x5B9A;</h3><p>&#x767B;&#x5F55;&#x963F;&#x91CC;&#x4E91;&#x5230;&#x63A7;&#x5236;&#x53F0;&#xFF08;godaddy&#x4E5F;&#x4E00;&#x6837;&#xFF09;&#xFF1A;&#x9009;&#x62E9;&#x57DF;&#x540D;&#x2192;&#x70B9;&#x89E3;&#x6790;&#x2192;&#x6DFB;&#x52A0;&#x89E3;&#x6790;&#xFF0C;&#x7136;&#x540E;&#x5982;&#x4E0B;&#x56FE;&#x586B;&#x5199;&#xFF0C;&#x8BB0;&#x5F55;&#x503C;&#x5199;github&#x4ED3;&#x5E93;&#x540D;&#x300E;your_user_name.github.io&#x300F;&#x3002;<br><img src="/2016/12/09/hexo-git-config/2.png" alt="&#x201C;&#x57DF;&#x540D;&#x89E3;&#x6790;1&#x201D;"><br><img src="/2016/12/09/hexo-git-config/3.png" alt="&#x201C;&#x57DF;&#x540D;&#x89E3;&#x6790;2&#x201D;"> </p>
 <h3 id="7-hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"><a href="#7-hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;" class="headerlink" title="7.hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"></a>7.hexo&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</h3><p>&#x4F5C;&#x7528;&#xFF1A;&#x628A;&#x672C;&#x5730;&#x7684;hexo&#x751F;&#x4EA7;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x63D0;&#x4EA4;&#x5230;github&#x4E0A;&#x53BB;<br>&#x6CE8;&#x610F;&#xFF1A;&#x2013;save&#x8981;&#x52A0;&#x4E0A;&#xFF0C;&#x4E0D;&#x7136;&#x4F1A;&#x62A5;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;git&#x6216;&#x627E;&#x4E0D;&#x5230;git<br><blockquote><p>npm install hexo-deployer-git &#x2013;save</p>
 </blockquote></p>
-<h3 id="8-&#x5173;&#x8054;github"><a href="#8-&#x5173;&#x8054;github" class="headerlink" title="8.&#x5173;&#x8054;github"></a>8.&#x5173;&#x8054;github</h3><p>&#x5728;hexo&#x7684;&#x6839;&#x76EE;&#x5F55;&#x91CC;&#xFF0C;&#x6253;&#x5F00;_config.yml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x62C9;&#x5230;&#x6700;&#x540E;&#xFF0C;&#x4FEE;&#x6539;&#x5982;&#x4E0B;&#x90E8;&#x5206;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;<br><img src="/2016/12/09/hexo-git-config/4.png" alt="&#x201C;&#x5173;&#x8054;git&#x914D;&#x7F6E;&#x201D;"> </p>
+<h3 id="8-&#x5173;&#x8054;github"><a href="#8-&#x5173;&#x8054;github" class="headerlink" title="8.&#x5173;&#x8054;github"></a>8.&#x5173;&#x8054;github</h3><p>&#x5728;hexo&#x7684;&#x6839;&#x76EE;&#x5F55;&#x91CC;&#xFF0C;&#x6253;&#x5F00;_config.yml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x62C9;&#x5230;&#x6700;&#x540E;&#xFF0C;&#x4FEE;&#x6539;&#x5982;&#x4E0B;&#x90E8;&#x5206;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;<br><img src="/2016/12/09/hexo-git-config/4.png" alt="&#x201C;&#x5173;&#x8054;git&#x914D;&#x7F6E;&#x201D;"></p>
 <h3 id="9-&#x6DFB;&#x52A0;ssh-key"><a href="#9-&#x6DFB;&#x52A0;ssh-key" class="headerlink" title="9.&#x6DFB;&#x52A0;ssh key"></a>9.&#x6DFB;&#x52A0;ssh key</h3><p>&#x4E3A;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x5230;github&#x4E0A;&#x90FD;&#x9700;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x6DFB;&#x52A0;ssh key&#x5230;Github&#xFF0C;&#x5728;git&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;<br>&#x751F;&#x6210;ssh key,&#x6309;&#x7167;&#x56FE;&#x4E2D;&#x753B;&#x6A59;&#x8272;&#x7EBF;&#x6846;&#x6B65;&#x9AA4;&#x952E;&#x5165;<br><img src="/2016/12/09/hexo-git-config/5.png" alt="&#x201C;&#x751F;&#x4EA7;ssh_key&#x201D;"><br>&#x6DFB;&#x52A0;ssh key&#x5230;Github&#xFF0C;&#x628A;id_rsa.pub&#x91CC;&#x7684;&#x5185;&#x5BB9;&#x7C98;&#x8D34;&#x5230;&#x4E0B;&#x56FE;&#x7684;key&#x4E2D;&#xFF0C;&#x4FDD;&#x5B58;&#x5373;&#x53EF;<br><img src="/2016/12/09/hexo-git-config/1.png" alt="&#x201C;ssh_key&#x201D;"><br><blockquote><p>ok&#xFF01;&#x5230;&#x6B64;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x7ED3;&#x675F;&#xFF0C;&#x8BBF;&#x95EE;&#x4EE5;&#x4E0B;&#x57DF;&#x540D;&#xFF0C;&#x5C31;&#x80FD;&#x770B;&#x5230;Hello World&#x5566;&#xFF01;&#x7A0D;&#x540E;&#x4F1A;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;hexo&#x57FA;&#x4E8E;Markdown&#x7684;&#x4E00;&#x4E0B;&#x547D;&#x4EE4;&#x4E0E;&#x89C4;&#x5219;&#xFF0C;&#x4EE5;&#x53CA;hexo&#x4E3B;&#x9898;&#x3001;<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="external">&#x56FE;&#x7247;&#x7B49;&#x9759;&#x6001;&#x8D44;&#x6E90;</a>&#x3001;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x7B49;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x7167;<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo&#x5B98;&#x7F51;</a></p>
 </blockquote></p>
 ]]></content>
@@ -216,18 +243,18 @@
       <category term="环境-工具" scheme="http://yoursite.com/categories/%E7%8E%AF%E5%A2%83-%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
       <category term="安装，配置" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85%EF%BC%8C%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
+    <title>hexo常用指令</title>
     <link href="http://yoursite.com/2016/12/07/hello-world/"/>
     <id>http://yoursite.com/2016/12/07/hello-world/</id>
     <published>2016-12-07T02:28:48.691Z</published>
-    <updated>2016-12-29T09:14:30.480Z</updated>
+    <updated>2017-06-29T11:20:31.585Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></div></pre></td></tr></table></figure>
@@ -240,6 +267,111 @@
 <h3 id="&#x9996;&#x9875;&#x6587;&#x7AE0;&#x663E;&#x793A;&#x884C;&#x6570;"><a href="#&#x9996;&#x9875;&#x6587;&#x7AE0;&#x663E;&#x793A;&#x884C;&#x6570;" class="headerlink" title="&#x9996;&#x9875;&#x6587;&#x7AE0;&#x663E;&#x793A;&#x884C;&#x6570;"></a>&#x9996;&#x9875;&#x6587;&#x7AE0;&#x663E;&#x793A;&#x884C;&#x6570;</h3><p>&#x5199;&#x6587;&#x7AE0;&#x65F6;&#x63D2;&#x5165;<!--more-->,&#x6587;&#x7AE0;&#x4F1A;&#x81EA;&#x52A8;&#x4ECE;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;&#x622A;&#x65AD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5728;&#x535A;&#x5BA2;&#x4E2D;&#x53EA;&#x663E;&#x793A;<!--more-->&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x70B9;&#x51FB;&#x9605;&#x8BFB;&#x5168;&#x6587;&#x4E4B;&#x540E;&#x4F1A;&#x663E;&#x793A;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x3002;</p>
 <h3 id="&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x7684;&#x9ED8;&#x8BA4;&#x5B9A;&#x754C;&#x7B26;"><a href="#&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x7684;&#x9ED8;&#x8BA4;&#x5B9A;&#x754C;&#x7B26;" class="headerlink" title="&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x7684;&#x9ED8;&#x8BA4;&#x5B9A;&#x754C;&#x7B26;"></a>&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x7684;&#x9ED8;&#x8BA4;&#x5B9A;&#x754C;&#x7B26;</h3><p>&#x5757;&#x7EA7;&#x516C;&#x5F0F;:$$&#x2026;$$&#x548C;\[&#x2026;\]&#xFF08;&#x5BF9;&#x4E8E;&#x5757;&#x7EA7;&#x516C;&#x5F0F;&#xFF09;<br>&#x884C;&#x5185;&#x516C;&#x5F0F;:$&#x2026;$&#x548C;\(&#x2026;\)<br>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x6587;&#x7AE0;&#x5185;&#x5BB9;&#x4E2D;&#x7ECF;&#x5E38;&#x51FA;&#x73B0;&#x7F8E;&#x5143;&#x7B26;&#x53F7;&#x201C;$&#x201D;, &#x6216;&#x8005;&#x8BF4;&#x4F60;&#x60F3;&#x5C06;&#x201C;$&#x201D;&#x7528;&#x4F5C;&#x7F8E;&#x5143;&#x7B26;&#x53F7;&#x800C;&#x975E;&#x884C;&#x5185;&#x516C;&#x5F0F;&#x7684;&#x5B9A;&#x754C;&#x7B26;&#xFF0C;&#x8BF7;&#x5728;Hexo&#x76EE;&#x5F55;&#x7684;_config.yml&#x4E2D;&#x6DFB;&#x52A0;&#xFF1A;</p>
 <p>mathjax2: true<br>&#x800C;&#x4E0D;&#x662F;mathjax: true&#x3002; &#x76F8;&#x5E94;&#x5730;&#xFF0C;&#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x7684;&#x6587;&#x7AE0;&#x7684;front-matter&#x4E2D;&#x4E5F;&#x6DFB;&#x52A0;mathjax2: true&#x3002;</p>
+<h2 id="3-1-1-init"><a href="#3-1-1-init" class="headerlink" title="3.1.1 init"></a>3.1.1 init</h2><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init <span class="string">[folder]</span></div></pre></td></tr></table></figure>
+<p>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E; folder &#xFF0C;Hexo &#x9ED8;&#x8BA4;&#x5728;&#x76EE;&#x524D;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x5EFA;&#x7ACB;&#x7F51;&#x7AD9;&#x3002;</p>
+<h2 id="3-1-2-new"><a href="#3-1-2-new" class="headerlink" title="3.1.2 new"></a>3.1.2 new</h2><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</div></pre></td></tr></table></figure>
+<p>&#x65B0;&#x5EFA;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E; layout &#x7684;&#x8BDD;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; _config.yml &#x4E2D;&#x7684; default_layout &#x53C2;&#x6570;&#x4EE3;&#x66FF;&#x3002;&#x5982;&#x679C;&#x6807;&#x9898;&#x5305;&#x542B;&#x7A7A;&#x683C;&#x7684;&#x8BDD;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x5F15;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x3002;</p>
+<h2 id="3-1-3-generate"><a href="#3-1-3-generate" class="headerlink" title="3.1.3 generate"></a>3.1.3 generate</h2><figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
+<p>&#x751F;&#x6210;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x3002;         </p>
+<table>
+<thead>
+<tr>
+<th>&#x9009;&#x9879;</th>
+<th>&#x7B80;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x2013;deploy</td>
+<td>-d</td>
+<td>&#x6587;&#x4EF6;&#x751F;&#x6210;&#x540E;&#x7ACB;&#x5373;&#x90E8;&#x7F72;&#x7F51;&#x7AD9;</td>
+</tr>
+<tr>
+<td>&#x2013;watch</td>
+<td>-w</td>
+<td>&#x76D1;&#x89C6;&#x6587;&#x4EF6;&#x53D8;&#x52A8;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x4E3A;<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>hexo g</div></pre></td></tr></table></figure></p>
+<h2 id="3-1-4-publish"><a href="#3-1-4-publish" class="headerlink" title="3.1.4 publish"></a>3.1.4 publish</h2><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo publish <span class="string">[layout]</span> &lt;filename&gt;</div></pre></td></tr></table></figure>
+<p>&#x53D1;&#x8868;&#x8349;&#x7A3F;&#x3002;</p>
+<h2 id="3-1-5-server"><a href="#3-1-5-server" class="headerlink" title="3.1.5 server"></a>3.1.5 server</h2><figure class="highlight axapta"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">server</span></div></pre></td></tr></table></figure>
+<p>&#x542F;&#x52A8;&#x670D;&#x52A1;&#x5668;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BBF;&#x95EE;&#x7F51;&#x5740;&#x4E3A;&#xFF1A; <a href="http://localhost:4000/&#x3002;" target="_blank" rel="external">http://localhost:4000/&#x3002;</a></p>
+<table>
+<thead>
+<tr>
+<th>&#x9009;&#x9879;</th>
+<th>&#x7B80;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x2013;port</td>
+<td>-p</td>
+<td>&#x91CD;&#x8BBE;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>&#x2013;static</td>
+<td>-s</td>
+<td>&#x53EA;&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>&#x2013;log</td>
+<td>-l</td>
+<td>&#x542F;&#x52A8;&#x65E5;&#x8BB0;&#x8BB0;&#x5F55;&#xFF0C;&#x4F7F;&#x7528;&#x8986;&#x76D6;&#x8BB0;&#x5F55;&#x683C;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-1-6-deploy"><a href="#3-1-6-deploy" class="headerlink" title="3.1.6 deploy"></a>3.1.6 deploy</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>hexo deploy</div></pre></td></tr></table></figure>
+<p>&#x90E8;&#x7F72;&#x7F51;&#x7AD9;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x9009;&#x9879;</th>
+<th>&#x7B80;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x2013;generate</td>
+<td>-g</td>
+<td>&#x90E8;&#x7F72;&#x4E4B;&#x524D;&#x9884;&#x5148;&#x751F;&#x6210;&#x9759;&#x6001;&#x6587;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x4E3A;&#xFF1A;$ hexo d</p>
+<h2 id="3-1-7-render"><a href="#3-1-7-render" class="headerlink" title="3.1.7 render"></a>3.1.7 render</h2><figure class="highlight prolog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo render &lt;file1&gt; [file2] ...</div></pre></td></tr></table></figure>
+<p>&#x6E32;&#x67D3;&#x6587;&#x4EF6;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x9009;&#x9879;</th>
+<th>&#x7B80;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x2013;output</td>
+<td>-o</td>
+<td>&#x90E8;&#x7F72;&#x4E4B;&#x524D;&#x9884;&#x5148;&#x751F;&#x6210;&#x9759;&#x6001;&#x6587;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-1-8-migrate"><a href="#3-1-8-migrate" class="headerlink" title="3.1.8 migrate"></a>3.1.8 migrate</h2><figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo migrate &lt;type&gt;</div><div class="line">``` </div><div class="line">&#x4ECE;&#x5176;&#x4ED6;&#x535A;&#x5BA2;&#x7CFB;&#x7EDF; &#x8FC1;&#x79FB;&#x5185;&#x5BB9;&#x3002;</div><div class="line"></div><div class="line">## <span class="number">3.1</span><span class="number">.9</span>  clean</div></pre></td></tr></table></figure>
+<p>$ hexo clean<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x6587;&#x4EF6; (<span class="selector-tag">db</span><span class="selector-class">.json</span>) &#x548C;&#x5DF2;&#x751F;&#x6210;&#x7684;&#x9759;&#x6001;&#x6587;&#x4EF6; (<span class="selector-tag">public</span>)&#x3002;</div><div class="line"></div><div class="line">&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#xFF08;&#x5C24;&#x5176;&#x662F;&#x66F4;&#x6362;&#x4E3B;&#x9898;&#x540E;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x60A8;&#x5BF9;&#x7AD9;&#x70B9;&#x7684;&#x66F4;&#x6539;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x4E5F;&#x4E0D;&#x751F;&#x6548;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x8FD0;&#x884C;&#x8BE5;&#x547D;&#x4EE4;&#x3002;</div><div class="line"></div><div class="line">## 3<span class="selector-class">.2</span><span class="selector-class">.0</span>  <span class="selector-tag">list</span></div></pre></td></tr></table></figure></p>
+<p>$ hexo list <type><br><figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#x5217;&#x51FA;&#x7F51;&#x7AD9;&#x8D44;&#x6599;&#x3002;</div><div class="line"></div><div class="line">## <span class="number">3.2</span><span class="number">.1</span>  version</div></pre></td></tr></table></figure></type></p>
+<p>$ hexo version<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#x663E;&#x793A; Hexo &#x7248;&#x672C;&#x3002;</div><div class="line"></div><div class="line">&#x9009;&#x9879;</div><div class="line">&#x5B89;&#x5168;&#x6A21;&#x5F0F;</div></pre></td></tr></table></figure></p>
+<p>$ hexo &#x2013;safe<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#x5728;&#x5B89;&#x5168;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x4E0D;&#x4F1A;&#x8F7D;&#x5165;&#x63D2;&#x4EF6;&#x548C;&#x811A;&#x672C;&#x3002;&#x5F53;&#x60A8;&#x5728;&#x5B89;&#x88C5;&#x65B0;&#x63D2;&#x4EF6;&#x906D;&#x9047;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4EE5;&#x5B89;&#x5168;&#x6A21;&#x5F0F;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x3002;</div><div class="line"></div><div class="line">&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;</div></pre></td></tr></table></figure></p>
+<p>$ hexo &#x2013;debug<br><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x663E;&#x793A;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#x5E76;&#x8BB0;&#x5F55;&#x5230; <span class="keyword">debug</span>.<span class="built_in">log</span>&#x3002;&#x5F53;&#x60A8;&#x78B0;&#x5230;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x7528;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x5E76; &#x63D0;&#x4EA4;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#x5230; GitHub&#x3002;</div><div class="line"></div><div class="line">&#x7B80;&#x6D01;&#x6A21;&#x5F0F;</div></pre></td></tr></table></figure></p>
+<p>$ hexo &#x2013;silent<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#x9690;&#x85CF;&#x7EC8;&#x7AEF;&#x4FE1;&#x606F;&#x3002;</div><div class="line"></div><div class="line">&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;</div></pre></td></tr></table></figure></p>
+<p>$ hexo &#x2013;config custom.yml<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x6267;&#x884C;&#x540E;&#x5C06;&#x4E0D;&#x518D;&#x4F7F;&#x7528; _<span class="selector-tag">config</span><span class="selector-class">.yml</span>&#x3002;</div><div class="line"></div><div class="line">&#x663E;&#x793A;&#x8349;&#x7A3F;</div></pre></td></tr></table></figure></p>
+<p>$ hexo &#x2013;draft<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#x663E;&#x793A; <span class="built_in">source</span>/_drafts &#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x8349;&#x7A3F;&#x6587;&#x7AE0;&#x3002;</div><div class="line"></div><div class="line">&#x81EA;&#x5B9A;&#x4E49; CWD</div></pre></td></tr></table></figure></p>
+<p>$ hexo &#x2013;cwd /path/to/cwd<br>```<br>&#x81EA;&#x5B9A;&#x4E49;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF08;Current working directory&#xFF09;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content>
     
@@ -251,6 +383,8 @@
     
     </summary>
     
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
