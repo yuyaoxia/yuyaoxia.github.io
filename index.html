@@ -293,6 +293,135 @@
             
               
                 
+                <a class="post-title-link" href="/2017/08/15/solr-basis/" itemprop="url">
+                  solr实战第一章--初始solr
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-08-15T19:43:50+08:00" content="2017-08-15">
+              2017-08-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/sorl/" itemprop="url" rel="index">
+                    <span itemprop="name">sorl</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote><p>sorl&#x662F;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x3001;&#x5F00;&#x7BB1;&#x5373;&#x7528;&#x7684;&#x4F01;&#x4E1A;&#x7EA7;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;JAVA WEB&#x5E94;&#x7528;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x5177;&#x4F53;&#x7684;NoSQL&#x6280;&#x672F;[&#x975E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x548C;&#x5904;&#x7406;&#x6280;&#x672F;],&#x7528;&#x6765;&#x641C;&#x7D22;&#x5927;&#x89C4;&#x6A21;&#x6587;&#x672C;&#x6570;&#x636E;&#x5E76;&#x6839;&#x636E;&#x76F8;&#x5173;&#x5EA6;&#x6392;&#x5E8F;&#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x5728;&#x4EFB;&#x4F55;&#x4E3B;&#x6D41;Java servlet &#x5F15;&#x64CE;&#x4E2D;&#xFF0C;&#x4F8B;&#x5982;jetty&#x548C;tomcat&#xFF0C;&#x6216;&#x8005;JBoss&#x3001;OracleAS&#x8FD9;&#x6837;&#x7684;J2EE&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+</blockquote>
+<h3 id="solr&#x4E0D;&#x662F;&#x4EC0;&#x4E48;"><a href="#solr&#x4E0D;&#x662F;&#x4EC0;&#x4E48;" class="headerlink" title="solr&#x4E0D;&#x662F;&#x4EC0;&#x4E48;"></a>solr&#x4E0D;&#x662F;&#x4EC0;&#x4E48;</h3><ul>
+<li>&#x4E0D;&#x662F;Google&#x6216;Bing&#x8FD9;&#x6837;&#x7684;&#x7F51;&#x7EDC;&#x641C;&#x7D22;&#x5F15;&#x64CE;</li>
+<li>solr&#x4E0D;&#x5177;&#x5907;&#x7F51;&#x7AD9;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x4F18;&#x5316;&#xFF08;SEO&#xFF09;&#x65B9;&#x9762;&#x7684;&#x529F;&#x80FD;<h3 id="&#x4E3B;&#x8981;&#x7279;&#x5F81;"><a href="#&#x4E3B;&#x8981;&#x7279;&#x5F81;" class="headerlink" title="&#x4E3B;&#x8981;&#x7279;&#x5F81;"></a>&#x4E3B;&#x8981;&#x7279;&#x5F81;</h3></li>
+<li>&#x53EF;&#x6269;&#x5C55;&#xFF1A;&#x901A;&#x8FC7;&#x96C6;&#x7FA4;&#x4E2D;&#x591A;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x8FD0;&#x884C;&#x5B9E;&#x73B0;&#x6269;&#x5C55;</li>
+<li>&#x5F00;&#x7BB1;&#x5373;&#x7528;&#xFF1A;solr&#x662F;&#x5F00;&#x6E90;&#x7684;&#xFF0C;&#x6613;&#x4E8E;&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x9884;&#x5148;&#x914D;&#x7F6E;&#x597D;&#x7684;&#x793A;&#x4F8B;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6613;&#x4E0A;&#x624B;</li>
+<li>&#x4E3A;&#x641C;&#x7D22;&#x4F18;&#x5316;&#xFF1A;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x4EE5;&#x4E9A;&#x79D2;&#x7EA7;&#x901F;&#x5EA6;&#x6267;&#x884C;&#x590D;&#x6742;&#x67E5;&#x8BE2;&#xFF0C;&#x5F80;&#x5F80;&#x53EA;&#x9700;&#x51E0;&#x5341;&#x6BEB;&#x79D2;</li>
+<li>&#x5927;&#x89C4;&#x6A21;&#x6587;&#x6863;&#xFF1A;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x5305;&#x542B;&#x767E;&#x4E07;&#x7EA7;&#x6587;&#x6863;&#x7684;&#x7D22;&#x5F15;</li>
+<li>&#x4EE5;&#x6587;&#x672C;&#x4E3A;&#x4E2D;&#x5FC3;&#xFF1A;&#x9488;&#x5BF9;&#x81EA;&#x7136;&#x6587;&#x672C;&#x641C;&#x7D22;&#x8FDB;&#x884C;&#x4F18;&#x5316;</li>
+<li>&#x6839;&#x636E;&#x76F8;&#x5173;&#x5EA6;&#x5BF9;&#x7ED3;&#x679C;&#x6392;&#x5E8F;&#xFF1A;&#x6839;&#x636E;&#x6587;&#x6863;&#x4E0E;&#x7528;&#x6237;&#x67E5;&#x8BE2;&#x7684;&#x76F8;&#x5173;&#x7A0B;&#x5EA6;&#x5BF9;&#x6587;&#x6863;&#x8FDB;&#x884C;&#x6392;&#x5E8F;<h3 id="&#x9002;&#x4E8E;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x8868;&#x73B0;"><a href="#&#x9002;&#x4E8E;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x8868;&#x73B0;" class="headerlink" title="&#x9002;&#x4E8E;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x8868;&#x73B0;"></a>&#x9002;&#x4E8E;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x8868;&#x73B0;</h3></li>
+<li>&#x4EE5;&#x6587;&#x672C;&#x4E3A;&#x4E2D;&#x5FC3;</li>
+<li>&#x8BFB;&#x4E3B;&#x5BFC;</li>
+<li>&#x9762;&#x5411;&#x6587;&#x6863;</li>
+<li>&#x7075;&#x6D3B;&#x7684;&#x6A21;&#x5F0F;</li>
+<li>&#x5927;&#x91CF;&#x7684;&#x6570;&#x636E;&#x9700;&#x8981;&#x5904;&#x7406;&#xFF08;&#x5373;&#x5927;&#x6570;&#x636E;&#xFF09;</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/08/14/xcx-demo/" itemprop="url">
                   小程序demo
                 </a>
@@ -994,8 +1123,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/环境—工具/" itemprop="url" rel="index">
-                    <span itemprop="name">环境—工具</span>
+                  <a href="/categories/sorl/" itemprop="url" rel="index">
+                    <span itemprop="name">sorl</span>
                   </a>
                 </span>
 
@@ -1290,121 +1419,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/21/JustMeet/" itemprop="url">
-                  '你见或者不见我'
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-21T17:52:09+08:00" content="2016-12-21">
-              2016-12-21
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/诗词/" itemprop="url" rel="index">
-                    <span itemprop="name">诗词</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <img src="/2016/12/21/JustMeet/justMeet.jpg" class="full-image" alt="alt" title="&#x4ED3;&#x592E;&#x5609;&#x63AA;">
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/21/JustMeet/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1450,7 +1464,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1458,7 +1472,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1467,7 +1481,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
