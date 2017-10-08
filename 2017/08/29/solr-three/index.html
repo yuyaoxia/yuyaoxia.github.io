@@ -113,7 +113,7 @@
 <meta property="og:image" content="http://yoursite.com/2017/08/29/solr-three/solr-schema-1.png">
 <meta property="og:image" content="http://yoursite.com/2017/08/29/solr-three/solr-schema-2.png">
 <meta property="og:image" content="http://yoursite.com/2017/08/29/solr-three/solr-schema-3.png">
-<meta property="og:updated_time" content="2017-08-29T06:39:09.839Z">
+<meta property="og:updated_time" content="2017-10-08T01:50:11.759Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="schema.xml配置详解">
 <meta name="twitter:description" content="schema&amp;#x4E3B;&amp;#x8981;&amp;#x4F5C;&amp;#x7528;&amp;#x662F;&amp;#x5B9A;&amp;#x4E49;&amp;#x6587;&amp;#x6863;&amp;#x7ED3;&amp;#x6784;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x628A;solr&amp;#x6BD4;&amp;#x4F5C;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#xFF0C;schema&amp;#x7C7B;&amp;#x4F3C;">
@@ -358,8 +358,7 @@
 
       
         <p>schema&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x5B9A;&#x4E49;&#x6587;&#x6863;&#x7ED3;&#x6784;&#xFF0C;&#x5982;&#x679C;&#x628A;solr&#x6BD4;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#xFF0C;schema&#x7C7B;&#x4F3C;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x7ED3;&#x6784;</p>
-<p>&#x6982;&#x89C8;<br>solr schema.xml &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x7ED3;&#x6784;solr schema.xml &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x7ED3;&#x6784;<br><img src="/2017/08/29/solr-three/solr-schema-1.png" alt="&#x201C;schema.xml&#x914D;&#x7F6E;&#x201D;"> </p>
-<p>schema&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x7531;&#x4E09;&#x90E8;&#x5206;&#x6784;&#x6210;</p>
+<p>&#x6982;&#x89C8;<br>solr schema.xml &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x7ED3;&#x6784;solr schema.xml &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x7ED3;&#x6784;<br><img src="/2017/08/29/solr-three/solr-schema-1.png" alt="&#x201C;schema.xml&#x914D;&#x7F6E;&#x201D;"><br><a id="more"></a><br>schema&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x7531;&#x4E09;&#x90E8;&#x5206;&#x6784;&#x6210;</p>
 <p>1&#x3001;<strong><fields></fields></strong>&#x5143;&#x7D20;&#x4E3A;&#x5B57;&#x6BB5;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x542B;<strong><field></field></strong>&#x548C;<strong><dynamicfield></dynamicfield></strong>&#x5143;&#x7D20;<br>2&#x3001;&#x5176;&#x4ED6;&#x5143;&#x7D20; <strong><uniquekey></uniquekey></strong> <strong><copyfield></copyfield></strong>&#x7B49;<br>3&#x3001;<strong><types></types></strong>&#x5143;&#x7D20;&#x4E3A;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x914D;&#x7F6E;&#xFF0C;&#x5B9A;&#x4E49;solr&#x80FD;&#x591F;&#x5904;&#x7406;&#x7684;&#x65E5;&#x671F;&#x3001;&#x6570;&#x5B57;&#x3001;&#x548C;&#x6587;&#x672C;&#x5B57;&#x6BB5;</p>
 <h3 id="&#x5C5E;&#x6027;&#x89E3;&#x91CA;"><a href="#&#x5C5E;&#x6027;&#x89E3;&#x91CA;" class="headerlink" title="&#x5C5E;&#x6027;&#x89E3;&#x91CA;"></a><schema>&#x5C5E;&#x6027;&#x89E3;&#x91CA;</schema></h3><p>1&#x3001;name:&#x4EC5;&#x7528;&#x4E8E;&#x663E;&#x793A;<br>2&#x3001;version:&#x7248;&#x672C;&#x53F7;&#x4EC5;&#x7528;&#x4E8E;solr&#x5185;&#x90E8;&#x542F;&#x7528;&#x5177;&#x4F53;&#x529F;&#x80FD;</p>
 <h3 id="&#x5143;&#x7D20;"><a href="#&#x5143;&#x7D20;" class="headerlink" title="&#x5143;&#x7D20;"></a><fields>&#x5143;&#x7D20;</fields></h3><p><img src="/2017/08/29/solr-three/solr-schema-2.png" alt="&#x201C;schema.xml&#x914D;&#x7F6E;&#x201D;"><br>fields&#x5143;&#x7D20;fields&#x5143;&#x7D20; fields&#x5B9A;&#x4E49;&#x6587;&#x6863;&#x5B57;&#x6BB5;&#xFF0C;&#x5305;&#x542B;&#x666E;&#x901A;&#x5B57;&#x6BB5;field &#x548C; &#x52A8;&#x6001;&#x5B57;&#x6BB5;dynamicField &#x8282;&#x70B9;</p>
@@ -415,6 +414,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/08/Multi-threading/" rel="prev" title="多线程问题 一">
+                多线程问题 一 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -482,7 +485,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -499,7 +502,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

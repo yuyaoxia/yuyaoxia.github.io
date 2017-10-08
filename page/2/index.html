@@ -293,6 +293,244 @@
             
               
                 
+                <a class="post-title-link" href="/2017/05/17/tomcat-to-linux/" itemprop="url">
+                  linux 安装 tomcat
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-05-17T11:23:28+08:00" content="2017-05-17">
+              2017-05-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/环境—工具/" itemprop="url" rel="index">
+                    <span itemprop="name">环境—工具</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="&#x4E0B;&#x8F7D;tomcat"><a href="#&#x4E0B;&#x8F7D;tomcat" class="headerlink" title="&#x4E0B;&#x8F7D;tomcat"></a>&#x4E0B;&#x8F7D;tomcat</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http:<span class="regexp">//</span>apache.fayea.com<span class="regexp">/tomcat/</span>tomcat-<span class="number">9</span><span class="regexp">/v9.0.0.M21/</span>bin<span class="regexp">/apache-tomcat-9.0.0.M21.tar.gz</span></div></pre></td></tr></table></figure>
+<pre><code>![&#x201C;tomcat&#x4E0B;&#x8F7D;&#x201D;](tomcat-to-linux/tomcat.png) 
+&#x4E4B;&#x524D;&#x6CA1;&#x7559;&#x610F;&#xFF0C;&#x4ECA;&#x5929;&#x4E0B;&#x8F7D;tomcat&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x5305;&#x5F88;&#x591A;&#x4E0D;&#x77E5;&#x9053;&#x4E0B;&#x54EA;&#x4E2A;&#xFF0C;&#x4E8E;&#x662F;&#x67E5;&#x4E86;&#x4E0B;&#x8D44;&#x6599;&#x4E86;&#x89E3;&#x4E86;&#x4E0B;&#xFF1A;
+&#x9996;&#x5148;&#xFF1A;Binary Distributions&#x548C;Source Code Distributions&#x5206;&#x522B;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x7248;&#x672C;&#x548C;&#x6E90;&#x4EE3;&#x7801;&#x672C;
+&#x5176;&#x6B21;&#xFF1A;Binary Distributions&#x4E0B;&#x9762;Core&#x548C;Deployer&#x4E24;&#x4E2A;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x533A;&#x522B;
+    Core&#xFF1A;&#x662F;Tomcat&#x6B63;&#x5F0F;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x53D1;&#x5E03;&#x7248;&#x672C;&#xFF0C;&#x4E00;&#x822C;&#x5927;&#x5BB6;&#x505A;&#x5F00;&#x53D1;&#x6216;&#x8005;&#x5B66;&#x4E60;&#x7684;&#x65F6;&#x5019;&#x5E94;&#x8BE5;&#x4E0B;&#x8F7D;Core&#x4E0B;&#x7684;&#x3002;
+    Deployer&#xFF1A;&#x662F;&#x57FA;&#x4E8E;Tomcat&#x7684;web&#x5E94;&#x7528;&#x7684;&#x53D1;&#x5E03;&#x5668;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x628A;&#x5199;&#x597D;&#x7684;JavaEE&#x5E94;&#x7528;&#x53D1;&#x5E03;&#x5230;Tomcat&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Deployer&#x6765;&#x52A8;&#x6001;&#x7684;&#x53D1;&#x5E03;&#x3002;&#x6240;&#x4EE5;&#x5B83;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;Tomcat&#x4E8C;&#x8FDB;&#x5236;&#x7248;&#x672C;&#xFF0C;&#x5B83;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4EE5;&#x53D1;&#x5E03;&#x57FA;&#x4E8E;Tomcat&#x7684;Web&#x5E94;&#x7528;&#x7684;&#x53D1;&#x5E03;&#x5DE5;&#x5177;&#x800C;&#x5DF2;
+
+
+    Tomcat&#x4E2D;&#x7684;Web&#x5E94;&#x7528;&#x53D1;&#x5E03;&#x7684;&#x6982;&#x5FF5;&#x3002;
+</code></pre><p>&#x53D1;&#x5E03;&#xFF1A;&#x6307;&#x7684;&#x662F;&#x628A;&#x4E00;&#x4E2A;Web&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x5230;Tomcat&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x7684;&#x8FC7;&#x7A0B;&#x3002;<br>&#x5728;Tomcat&#x4E2D;&#x53D1;&#x5E03;Web&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;<br>1&#x3001;&#x9759;&#x6001;&#x53D1;&#x5E03;&#xFF1A;&#x6307;&#x7684;&#x662F;&#x5728;Tomcat&#x672A;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x628A;&#x505A;&#x597D;&#x7684;Web&#x5E94;&#x7528;&#x76F4;&#x63A5;&#x590D;&#x5236;&#x5230;Tomcat&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x3002;<br>2&#x3001;&#x52A8;&#x6001;&#x53D1;&#x5E03;&#xFF1A;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;<br>        2.1  &#x6307;&#x7684;&#x662F;&#x5728;Tomcat&#x5DF2;&#x7ECF;&#x542F;&#x52A8;&#x8FD0;&#x884C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x901A;&#x8FC7;Tomcat&#x7684;&#x81EA;&#x52A8;&#x90E8;&#x7F72;&#x529F;&#x80FD;&#x52A8;&#x6001;&#x64CD;&#x4F5C;&#x5DF2;&#x7ECF;&#x53D1;&#x5E03;&#x7684;Web&#x5E94;&#x7528;.<br>        2.2  &#x6307;&#x7684;&#x662F;&#x901A;&#x8FC7;Tomcat Manager&#x8FD9;&#x4E2A;Web&#x5E94;&#x7528;&#x901A;&#x8FC7;&#x8FDC;&#x7A0B;&#x628A;&#x505A;&#x597D;&#x7684;Web&#x5E94;&#x7528;&#x53D1;&#x5E03;&#x5230;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;Tomcat&#x4E2D;&#x53BB;&#x3002;<br>Deployer&#x7684;&#x4F5C;&#x7528;&#x5C31;&#x5728;&#x52A8;&#x6001;&#x53D1;&#x5E03;Web&#x5E94;&#x7528;&#x5230;Tomcat&#x4E2D;&#x53BB;&#x7684;&#x65F6;&#x5019;&#x4F53;&#x73B0;&#x51FA;&#x6765;&#x7684;&#x3002;<br>Deployer&#x662F;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x7F16;&#x8BD1;&#x3001;&#x9A8C;&#x8BC1;Web&#x5E94;&#x7528;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x628A;Web&#x5E94;&#x7528;&#x7684;&#x5168;&#x90E8;&#x8D44;&#x6E90;&#x6253;&#x5305;&#x5230;War&#x6587;<!--  -->&#x4EF6;&#x4E2D;&#x3002;</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/14/transaction/" itemprop="url">
+                  Spring MVC--transaction
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-14T19:26:06+08:00" content="2017-03-14">
+              2017-03-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java基础/" itemprop="url" rel="index">
+                    <span itemprop="name">java基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote><p>&#x907F;&#x514D;&#x61D2;&#x60F0;&#xFF0C;&#x6162;&#x6162;&#x5411;&#x524D;&#x8D70;&#x2026;&#x2026;</p>
+</blockquote>
+<p>&#x4E8B;&#x52A1;&#x5FC5;&#x987B;&#x670D;&#x4ECE;ISO/IEC&#x6240;&#x5236;&#x5B9A;&#x7684;ACID&#x539F;&#x5219;&#xFF1A;ACID&#x662F;&#x539F;&#x5B50;&#x6027;&#xFF08;atomicity&#xFF09;&#x3001;&#x4E00;&#x81F4;&#x6027;&#xFF08;consistency&#xFF09;&#x3001;&#x9694;&#x79BB;&#x6027;&#xFF08;isolation&#xFF09;&#x548C;&#x6301;&#x4E45;&#x6027;&#xFF08;durability&#xFF09;&#x7684;&#x7F29;&#x5199;</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/01/17/solr/" itemprop="url">
                   solr安装
                 </a>
@@ -1107,7 +1345,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1124,7 +1362,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
