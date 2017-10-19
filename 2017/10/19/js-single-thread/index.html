@@ -1,0 +1,864 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="前端，js," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Yuyaoxia's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="&amp;#x5F88;&amp;#x591A;&amp;#x7AE5;&amp;#x978B;&amp;#x4E0D;&amp;#x7406;&amp;#x89E3;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;JavaScript&amp;#x662F;&amp;#x5355;&amp;#x7EBF;&amp;#x7A0B;&amp;#x7684;&amp;#x5374;&amp;#x80FD;&amp;#x8BA9;AJAX&amp;#x5F02;&amp;#x6B65;&amp;#x53D1;&amp;#x9001;&amp;#x548C;&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js单线程详解">
+<meta property="og:url" content="http://yoursite.com/2017/10/19/js-single-thread/index.html">
+<meta property="og:site_name" content="Yuyaoxia's Blog">
+<meta property="og:description" content="&amp;#x5F88;&amp;#x591A;&amp;#x7AE5;&amp;#x978B;&amp;#x4E0D;&amp;#x7406;&amp;#x89E3;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;JavaScript&amp;#x662F;&amp;#x5355;&amp;#x7EBF;&amp;#x7A0B;&amp;#x7684;&amp;#x5374;&amp;#x80FD;&amp;#x8BA9;AJAX&amp;#x5F02;&amp;#x6B65;&amp;#x53D1;&amp;#x9001;&amp;#x548C;&amp;#">
+<meta property="og:image" content="http://yoursite.com/2017/10/19/js-single-thread/1.png">
+<meta property="og:image" content="http://yoursite.com/2017/10/19/js-single-thread/2.png">
+<meta property="og:image" content="http://yoursite.com/2017/10/19/js-single-thread/3.png">
+<meta property="og:image" content="http://yoursite.com/2017/10/19/js-single-thread/4.png">
+<meta property="og:image" content="http://yoursite.com/2017/10/19/js-single-thread/5.png">
+<meta property="og:updated_time" content="2017-10-19T08:30:24.081Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="js单线程详解">
+<meta name="twitter:description" content="&amp;#x5F88;&amp;#x591A;&amp;#x7AE5;&amp;#x978B;&amp;#x4E0D;&amp;#x7406;&amp;#x89E3;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;JavaScript&amp;#x662F;&amp;#x5355;&amp;#x7EBF;&amp;#x7A0B;&amp;#x7684;&amp;#x5374;&amp;#x80FD;&amp;#x8BA9;AJAX&amp;#x5F02;&amp;#x6B65;&amp;#x53D1;&amp;#x9001;&amp;#x548C;&amp;#">
+<meta name="twitter:image" content="http://yoursite.com/2017/10/19/js-single-thread/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> js单线程详解 | Yuyaoxia's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Yuyaoxia's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                js单线程详解
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-10-19T15:43:33+08:00" content="2017-10-19">
+              2017-10-19
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>&#x5F88;&#x591A;&#x7AE5;&#x978B;&#x4E0D;&#x7406;&#x89E3;&#x4E3A;&#x4EC0;&#x4E48;JavaScript&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#x5374;&#x80FD;&#x8BA9;AJAX&#x5F02;&#x6B65;&#x53D1;&#x9001;&#x548C;&#x56DE;&#x8C03;&#x8BF7;&#x6C42;&#xFF0C;&#x8FD8;&#x6709;setTimeout&#x4E5F;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#xFF1F;&#x8FD8;&#x6709;non-blocking IO, event loop&#x7B49;&#x6982;&#x5FF5;&#x5F88;&#x4E0D;&#x6E05;&#x695A;&#x3002;&#x6765;&#x6DF1;&#x5165;&#x5206;&#x6790;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<p>&#x9996;&#x5148;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">()</span> {</span></div><div class="line">    console.<span class="built_in">log</span>( <span class="string">&apos;first&apos;</span> );</div><div class="line">    setTimeout( ( <span class="function"><span class="keyword">function</span><span class="params">()</span>{ <span class="title">console</span>.<span class="title">log</span><span class="params">( &apos;second&apos; )</span>; } ), 0.0000000000001);</span></div><div class="line"> </div><div class="line">}</div><div class="line"><span class="keyword">for</span> (var <span class="built_in">i</span> = <span class="number">0</span>; <span class="built_in">i</span> &lt; <span class="number">100000</span>; <span class="built_in">i</span>++) {</div><div class="line">    foo();</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;<br><img src="/2017/10/19/js-single-thread/1.png" alt="&apos;js&#x5355;&#x7EBF;&#x7A0B;&#x8BE6;&#x89E3;&apos;"><br>&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4F1A;&#x9996;&#x5148;&#x5168;&#x90E8;&#x8F93;&#x51FA;first&#xFF0C;&#x7136;&#x540E;&#x5168;&#x90E8;&#x8F93;&#x51FA;second&#xFF1B;&#x5C3D;&#x7BA1;&#x4E2D;&#x95F4;&#x7684;&#x6267;&#x884C;&#x4F1A;&#x8D85;&#x8FC7;0.0000000000001ms&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;<br><a id="more"></a></p>
+<h4 style="    background-color: #51aded;border-radius: 6px 6px 6px 6px;box-shadow: 0 0 0 1px #ccd, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);color: #fff;font-weight: normal;font-size: 18px;padding: 10px;line-height: 28px;margin-bottom: 1.5em; text-shadow: 2px 2px 3px #222222;">Javascript&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;</h4>
+
+<p>&#x56E0;&#x4E3A;JS&#x8FD0;&#x884C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;window&#x4E00;&#x4E2A;JS&#x7EBF;&#x7A0B;&#xFF0C;&#x65E2;&#x7136;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x5728;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x65F6;&#x523B;&#x53EA;&#x6709;&#x7279;&#x5B9A;&#x7684;&#x4EE3;&#x7801;&#x80FD;&#x591F;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x963B;&#x585E;&#x5176;&#x5B83;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x800C;&#x6D4F;&#x89C8;&#x5668;&#x662F;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x7684;&#xFF08;Event driven&#xFF09;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5F88;&#x591A;&#x884C;&#x4E3A;&#x662F;&#x5F02;&#x6B65;&#xFF08;Asynchronized&#xFF09;&#x7684;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;&#x4E8B;&#x4EF6;&#x5E76;&#x653E;&#x5165;&#x6267;&#x884C;&#x961F;&#x5217;&#x4E2D;&#x3002;javascript&#x5F15;&#x64CE;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x5B83;&#x7684;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x6210;&#x5C31;&#x662F;&#x666E;&#x901A;&#x51FD;&#x6570;&#x548C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6784;&#x6210;&#x7684;&#x961F;&#x5217;&#x3002;&#x5F53;&#x5F02;&#x6B65;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x5982;mouse click, a timer firing, or an XMLHttpRequest completing&#xFF08;&#x9F20;&#x6807;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x3001;&#x5B9A;&#x65F6;&#x5668;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x3001;XMLHttpRequest&#x5B8C;&#x6210;&#x56DE;&#x8C03;&#x89E6;&#x53D1;&#x7B49;&#xFF09;&#xFF0C;&#x5C06;&#x4ED6;&#x4EEC;&#x653E;&#x5165;&#x6267;&#x884C;&#x961F;&#x5217;&#xFF0C;&#x7B49;&#x5F85;&#x5F53;&#x524D;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x3002;<br>&#x597D;&#xFF0C;&#x90A3;&#x4E48;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C31;&#x77E5;&#x9053;&#x4E3A;&#x4EC0;&#x4E48;&#x4E86;&#xFF1A;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">100000</span>; i++) {</div><div class="line">    <span class="built_in">console</span>.log( <span class="string">&apos;first&apos;</span> );</div><div class="line">	<span class="keyword">if</span>(i==<span class="number">10</span>){</div><div class="line">		setTimeout( ( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ <span class="built_in">console</span>.log( <span class="string">&apos;second&apos;</span> ); } ), <span class="number">0.0000000000001</span>);</div><div class="line">	}</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;:<br><img src="/2017/10/19/js-single-thread/2.png" alt="&apos;js&#x5355;&#x7EBF;&#x7A0B;&#x8BE6;&#x89E3;&apos;"><br>&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4F1A;&#x9996;&#x5148;&#x5168;&#x90E8;&#x8F93;&#x51FA;first&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;second&#xFF1B;&#x5C3D;&#x7BA1;&#x53EA;&#x6709;&#x4E00;&#x4E2A;setTimeout&#x3001;&#x5C3D;&#x7BA1;&#x4E2D;&#x95F4;&#x7684;&#x6267;&#x884C;&#x4F1A;&#x8D85;&#x8FC7;0.0000000000001ms&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;<br>&#x518D;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) {</div><div class="line">	setTimeout( ( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ <span class="built_in">console</span>.log( <span class="string">&apos;second&apos;</span> ); } ), <span class="number">0.000000000000000001</span>);</div><div class="line">    <span class="built_in">console</span>.log( <span class="string">&apos;first&apos;</span> );	</div><div class="line">	<span class="built_in">console</span>.log(i);</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;<br><img src="/2017/10/19/js-single-thread/3.png" alt="&apos;js&#x5355;&#x7EBF;&#x7A0B;&#x8BE6;&#x89E3;&apos;"><br>&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4F1A;&#x9996;&#x5148;&#x4EA4;&#x66FF;&#x8F93;&#x51FA;first&#x3001;i&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x51FA;3&#x4E2A;second&#xFF1B;&#x5C3D;&#x7BA1;setTimeout&#x653E;&#x5728;&#x4E86;&#x524D;&#x9762;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;<br>&#x518D;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {</div><div class="line">	setTimeout( ( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ <span class="built_in">console</span>.log( <span class="string">&apos;first&apos;</span> ); } ), <span class="number">1</span>);</div><div class="line">	setTimeout( ( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ <span class="built_in">console</span>.log( <span class="string">&apos;second&apos;</span> ); } ), <span class="number">1</span>);</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;<br><img src="/2017/10/19/js-single-thread/4.png" alt="&apos;js&#x5355;&#x7EBF;&#x7A0B;&#x8BE6;&#x89E3;&apos;"><br>&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4F1A;&#x4EA4;&#x66FF;&#x8F93;&#x51FA;first&#x3001;second&#xFF1B;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;<br>&#x518D;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {</div><div class="line">	setTimeout( ( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ <span class="built_in">console</span>.log( <span class="string">&apos;first&apos;</span> ); } ), <span class="number">1</span>);</div><div class="line">	setTimeout( ( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ <span class="built_in">console</span>.log( <span class="string">&apos;second&apos;</span> ); } ), <span class="number">0.000000000000000001</span>);</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;<br><img src="/2017/10/19/js-single-thread/5.png" alt="&apos;js&#x5355;&#x7EBF;&#x7A0B;&#x8BE6;&#x89E3;&apos;"><br>&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4F1A;&#x9996;&#x5148;&#x5168;&#x90E8;&#x8F93;&#x51FA;first&#xFF0C;&#x7136;&#x540E;&#x5168;&#x90E8;&#x8F93;&#x51FA;second&#xFF1B;</p>
+<h4 style="    background-color: #51aded;border-radius: 6px 6px 6px 6px;box-shadow: 0 0 0 1px #ccd, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);color: #fff;font-weight: normal;font-size: 18px;padding: 10px;line-height: 28px;margin-bottom: 1.5em; text-shadow: 2px 2px 3px #222222;">&#x5F02;&#x6B65;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;</h4>
+
+<p>&#x524D;&#x9762;&#x5DF2;&#x7ECF;&#x63D0;&#x5230;&#x6D4F;&#x89C8;&#x5668;&#x662F;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x7684;&#xFF08;Event driven&#xFF09;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5F88;&#x591A;&#x884C;&#x4E3A;&#x662F;&#x5F02;&#x6B65;&#xFF08;Asynchronized&#xFF09;&#x7684;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x9F20;&#x6807;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x3001;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x62D6;&#x62C9;&#x4E8B;&#x4EF6;&#x3001;&#x5B9A;&#x65F6;&#x5668;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x3001;XMLHttpRequest&#x5B8C;&#x6210;&#x56DE;&#x8C03;&#x7B49;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B83;&#x5C31;&#x8FDB;&#x5165;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x6709;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x5927;&#x6D88;&#x606F;&#x5FAA;&#x73AF;&#xFF0C;Event Loop&#xFF08;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#xFF09;&#xFF0C;&#x4F1A;&#x8F6E;&#x8BE2;&#x5927;&#x7684;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x5E76;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x5FD9;&#x4E8E;&#x5904;&#x7406;onclick&#x4E8B;&#x4EF6;&#xFF0C;&#x8FD9;&#x65F6;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x4E86;&#xFF08;&#x5982;&#xFF1A;window onSize&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x5F02;&#x6B65;&#x4E8B;&#x4EF6;&#x5C31;&#x88AB;&#x653E;&#x5165;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x7B49;&#x5F85;&#x5904;&#x7406;&#xFF0C;&#x53EA;&#x6709;&#x524D;&#x9762;&#x7684;&#x5904;&#x7406;&#x5B8C;&#x6BD5;&#x4E86;&#xFF0C;&#x7A7A;&#x95F2;&#x4E86;&#x624D;&#x4F1A;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x3002;setTimeout&#x4E5F;&#x662F;&#x4E00;&#x6837;&#xFF0C;&#x5F53;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;js&#x5F15;&#x64CE;&#x4F1A;&#x542F;&#x52A8;&#x5B9A;&#x65F6;&#x5668;timer&#xFF0C;&#x5927;&#x7EA6;xxms&#x4EE5;&#x540E;&#x6267;&#x884C;xxx&#xFF0C;&#x5F53;&#x5B9A;&#x65F6;&#x5668;&#x65F6;&#x95F4;&#x5230;&#xFF0C;&#x5C31;&#x628A;&#x8BE5;&#x4E8B;&#x4EF6;&#x653E;&#x5230;&#x4E3B;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x7B49;&#x5F85;&#x5904;&#x7406;&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x5FD9;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x771F;&#x6B63;&#x6267;&#x884C;&#xFF09;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x4E3B;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E0D;&#x5C3D;&#x76F8;&#x540C;&#xFF0C;&#x8FD9;&#x4E0D;&#x8C08;&#x4E86;&#x3002;</p>
+<h4 style="    background-color: #51aded;border-radius: 6px 6px 6px 6px;box-shadow: 0 0 0 1px #ccd, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);color: #fff;font-weight: normal;font-size: 18px;padding: 10px;line-height: 28px;margin-bottom: 1.5em; text-shadow: 2px 2px 3px #222222;">&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;</h4>
+
+<p>&#x867D;&#x7136;JS&#x8FD0;&#x884C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;window&#x4E00;&#x4E2A;JS&#x7EBF;&#x7A0B;&#xFF0C;&#x4F46;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x4F8B;&#x5982;Webkit&#x6216;&#x662F;Gecko&#x5F15;&#x64CE;&#xFF0C;&#x90FD;&#x53EF;&#x80FD;&#x6709;&#x5982;&#x4E0B;&#x7EBF;&#x7A0B;&#xFF1A;</p>
+<p>javascript&#x5F15;&#x64CE;&#x7EBF;&#x7A0B;<br>&#x754C;&#x9762;&#x6E32;&#x67D3;&#x7EBF;&#x7A0B;<br>&#x6D4F;&#x89C8;&#x5668;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x7EBF;&#x7A0B;<br>Http&#x8BF7;&#x6C42;&#x7EBF;&#x7A0B;<br>&#x5F88;&#x591A;&#x7AE5;&#x978B;&#x641E;&#x4E0D;&#x6E05;&#xFF0C;&#x5982;&#x679C;js&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x8C01;&#x53BB;&#x8F6E;&#x8BE2;&#x5927;&#x7684;Event loop&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x6709;&#x5355;&#x72EC;&#x7684;&#x7EBF;&#x7A0B;&#x53BB;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x961F;&#x5217;&#x3002;</p>
+<p></p><h4 style="background-color: #51aded;border-radius: 6px 6px 6px 6px;box-shadow: 0 0 0 1px #ccd, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);color: #fff;font-weight: normal;font-size: 18px;padding: 10px;line-height: 28px;margin-bottom: 1.5em; text-shadow: 2px 2px 3px #222222;">Ajax&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x771F;&#x7684;&#x5F02;&#x6B65;?</h4><br>&#x5F88;&#x591A;&#x7AE5;&#x978B;&#x641E;&#x4E0D;&#x6E05;&#x695A;&#xFF0C;&#x65E2;&#x7136;&#x8BF4;JavaScript&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x8FD0;&#x884C;&#x7684;&#xFF0C;&#x90A3;&#x4E48;XMLHttpRequest&#x5728;&#x8FDE;&#x63A5;&#x540E;&#x662F;&#x5426;&#x771F;&#x7684;&#x5F02;&#x6B65;?<br>&#x5176;&#x5B9E;&#x8BF7;&#x6C42;&#x786E;&#x5B9E;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF0C;&#x8FD9;&#x8BF7;&#x6C42;&#x662F;&#x7531;&#x6D4F;&#x89C8;&#x5668;&#x65B0;&#x5F00;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8BF7;&#x6C42;&#xFF08;&#x89C1;&#x524D;&#x9762;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x591A;&#x7EBF;&#x7A0B;&#xFF09;&#x3002;&#x5F53;&#x8BF7;&#x6C42;&#x7684;&#x72B6;&#x6001;&#x53D8;&#x66F4;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5148;&#x524D;&#x5DF2;&#x8BBE;&#x7F6E;&#x56DE;&#x8C03;&#xFF0C;&#x8FD9;&#x5F02;&#x6B65;&#x7EBF;&#x7A0B;&#x5C31;&#x4EA7;&#x751F;&#x72B6;&#x6001;&#x53D8;&#x66F4;&#x4E8B;&#x4EF6;&#x653E;&#x5230; JavaScript&#x5F15;&#x64CE;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x961F;&#x5217;&#x4E2D;&#x7B49;&#x5F85;&#x5904;&#x7406;&#x3002;&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x7A7A;&#x95F2;&#x7684;&#x65F6;&#x5019;&#x51FA;&#x961F;&#x5217;&#x4EFB;&#x52A1;&#x88AB;&#x5904;&#x7406;&#xFF0C;JavaScript&#x5F15;&#x64CE;&#x59CB;&#x7EC8;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x8FD0;&#x884C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;javascript&#x5F15;&#x64CE;&#x786E;&#x5B9E;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x5B83;&#x7684;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#xFF0C;&#x80FD;&#x7406;&#x89E3;&#x6210;&#x5C31;&#x662F;&#x666E;&#x901A;&#x51FD;&#x6570;&#x548C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6784;&#x6210;&#x7684;&#x961F;&#x5217;&#x3002;<p></p>
+<p>&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF0C;Ajax&#x8BF7;&#x6C42;&#x786E;&#x5B9E;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF0C;&#x8FD9;&#x8BF7;&#x6C42;&#x662F;&#x7531;&#x6D4F;&#x89C8;&#x5668;&#x65B0;&#x5F00;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8BF7;&#x6C42;&#xFF0C;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;&#x7684;&#x65F6;&#x5019;&#x662F;&#x653E;&#x5165;Event loop&#x5355;&#x7EBF;&#x7A0B;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x7B49;&#x5019;&#x5904;&#x7406;&#x3002;</p>
+<p></p><h4 style="    background-color: #51aded;border-radius: 6px 6px 6px 6px;box-shadow: 0 0 0 1px #ccd, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);color: #fff;font-weight: normal;font-size: 18px;padding: 10px;line-height: 28px;margin-bottom: 1.5em; text-shadow: 2px 2px 3px #222222;">setTimeout(func, 0)&#x4E3A;&#x4EC0;&#x4E48;&#x6709;&#x65F6;&#x5019;&#x6709;&#x7528;&#xFF1F;</h4><br>&#x5199;js&#x591A;&#x7684;&#x7AE5;&#x978B;&#x53EF;&#x80FD;&#x53D1;&#x73B0;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x52A0;&#x4E00;&#x4E2A;setTimeout(func, 0)&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x96BE;&#x9053;&#x662F;&#x6A21;&#x62DF;&#x591A;&#x7EBF;&#x7A0B;&#x5417;&#xFF1F;&#x9519;&#xFF01;&#x524D;&#x9762;&#x5DF2;&#x7ECF;&#x8BF4;&#x8FC7;&#x4E86;&#xFF0C;javascript&#x662F;JS&#x8FD0;&#x884C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;window&#x4E00;&#x4E2A;JS&#x7EBF;&#x7A0B;&#xFF0C;&#x65E2;&#x7136;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;setTimeout(func, 0)&#x795E;&#x5947;&#x5728;&#x54EA;&#x513F;&#xFF1F;&#x90A3;&#x5C31;&#x662F;&#x544A;&#x8BC9;js&#x5F15;&#x64CE;&#xFF0C;&#x5728;0ms&#x4EE5;&#x540E;&#x628A;func&#x653E;&#x5230;&#x4E3B;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x7B49;&#x5F85;&#x5F53;&#x524D;&#x7684;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x518D;&#x6267;&#x884C;&#xFF0C;&#x6CE8;&#x610F;&#xFF1A;&#x91CD;&#x70B9;&#x662F;&#x6539;&#x53D8;&#x4E86;&#x4EE3;&#x7801;&#x6D41;&#x7A0B;&#xFF0C;&#x628A;func&#x7684;&#x6267;&#x884C;&#x653E;&#x5230;&#x4E86;&#x7B49;&#x5F85;&#x5F53;&#x524D;&#x7684;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x518D;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x5B83;&#x7684;&#x795E;&#x5947;&#x4E4B;&#x5904;&#x4E86;&#x3002;&#x5B83;&#x7684;&#x7528;&#x5904;&#x6709;&#x4E09;&#x4E2A;&#xFF1A;<p></p>
+<p>&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x5F53;&#x524D;&#x7684;&#x53D8;&#x5316;&#xFF08;&#x5F88;&#x591A;&#x6D4F;&#x89C8;&#x5668;UI render&#x548C;js&#x6267;&#x884C;&#x662F;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E2D;&#xFF0C;&#x7EBF;&#x7A0B;&#x963B;&#x585E;&#x4F1A;&#x5BFC;&#x81F4;&#x754C;&#x9762;&#x65E0;&#x6CD5;&#x66F4;&#x65B0;&#x6E32;&#x67D3;&#xFF09;<br>&#x91CD;&#x65B0;&#x8BC4;&#x4F30;&#x201D;script is running too long&#x201D;&#x8B66;&#x544A;<br>&#x6539;&#x53D8;&#x6267;&#x884C;&#x987A;&#x5E8F;<br>&#x4F8B;&#x5982;&#xFF1A;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x201D;calculating&#x2026;.&#x201D;&#xFF0C;&#x5982;&#x679C;&#x5220;&#x9664;setTimeout&#x5C31;&#x4E0D;&#x4F1A;&#x3002;&#x56E0;&#x4E3A;reDraw&#x4E8B;&#x4EF6;&#x88AB;&#x8FDB;&#x5165;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x5230;&#x957F;&#x65F6;&#x95F4;&#x64CD;&#x4F5C;&#x7684;&#x6700;&#x540E;&#x624D;&#x80FD;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x5237;&#x65B0;&#x3002;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">&lt;button id=<span class="string">&apos;do&apos;</span>&gt; Do long calc!<span class="xml"><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></div><div class="line">&lt;div id=<span class="string">&apos;status&apos;</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></div><div class="line">&lt;div id=<span class="string">&apos;result&apos;</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></div><div class="line"> </div><div class="line"> </div><div class="line">$(<span class="string">&apos;#do&apos;</span>).on(<span class="string">&apos;click&apos;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</div><div class="line">  </div><div class="line">  $(<span class="string">&apos;#status&apos;</span>).text(<span class="string">&apos;calculating....&apos;</span>); <span class="comment">//&#x6B64;&#x5904;&#x4F1A;&#x89E6;&#x53D1;redraw&#x4E8B;&#x4EF6;&#x7684;fired&#xFF0C;&#x4F46;&#x4F1A;&#x653E;&#x5230;&#x961F;&#x5217;&#x91CC;&#x6267;&#x884C;&#xFF0C;&#x76F4;&#x5230;long()&#x6267;&#x884C;&#x5B8C;&#x3002;</span></div><div class="line">  </div><div class="line">  <span class="comment">// without set timeout, user will never see &quot;calculating....&quot;</span></div><div class="line">  <span class="comment">//long();//&#x6267;&#x884C;&#x957F;&#x65F6;&#x95F4;&#x4EFB;&#x52A1;&#xFF0C;&#x963B;&#x585E;</span></div><div class="line">   </div><div class="line">  <span class="comment">// with set timeout, works as expected</span></div><div class="line">  setTimeout(long,<span class="number">50</span>);<span class="comment">//&#x7528;&#x5B9A;&#x65F6;&#x5668;&#xFF0C;&#x5927;&#x7EA6;50ms&#x4EE5;&#x540E;&#x6267;&#x884C;&#x957F;&#x65F6;&#x95F4;&#x4EFB;&#x52A1;&#xFF0C;&#x653E;&#x5165;&#x6267;&#x884C;&#x961F;&#x5217;&#xFF0C;&#x4F46;&#x5728;redraw&#x4E4B;&#x540E;&#x4E86;&#xFF0C;&#x6839;&#x636E;&#x5148;&#x8FDB;&#x5148;&#x51FA;&#x539F;&#x5219;</span></div><div class="line">  </div><div class="line"> })</div><div class="line">  </div><div class="line">  </div><div class="line">  </div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">long</span>(<span class="params"></span>)</span>{</div><div class="line">  <span class="keyword">var</span> result = <span class="number">0</span></div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;<span class="number">1000</span>; i++){</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j&lt;<span class="number">1000</span>; j++){</div><div class="line">      <span class="keyword">for</span> (<span class="keyword">var</span> k = <span class="number">0</span>; k&lt;<span class="number">1000</span>; k++){</div><div class="line">        result = result + i+j+k</div><div class="line">      }</div><div class="line">    } </div><div class="line">  }</div><div class="line">  $(<span class="string">&apos;#status&apos;</span>).text(<span class="string">&apos;calclation done&apos;</span>) <span class="comment">// has to be in here for this example. or else it will ALWAYS run instantly. This is the same as passing it a callback </span></div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p></p><h4 style="    background-color: #51aded;border-radius: 6px 6px 6px 6px;box-shadow: 0 0 0 1px #ccd, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);color: #fff;font-weight: normal;font-size: 18px;padding: 10px;line-height: 28px;margin-bottom: 1.5em; text-shadow: 2px 2px 3px #222222;">&#x975E;&#x963B;&#x585E;js&#x7684;&#x5B9E;&#x73B0;&#xFF08;non-blocking javascript&#xFF09;</h4><br>js&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x9700;&#x8981;&#x88AB;&#x4E0B;&#x8F7D;&#x3001;&#x89E3;&#x91CA;&#x5E76;&#x6267;&#x884C;&#x8FD9;&#x4E09;&#x6B65;&#x3002;&#x5728;html body&#x6807;&#x7B7E;&#x4E2D;&#x7684;script&#x90FD;&#x662F;&#x963B;&#x585E;&#x7684;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x987A;&#x5E8F;&#x4E0B;&#x8F7D;&#x3001;&#x89E3;&#x91CA;&#x3001;&#x6267;&#x884C;&#x3002;&#x5C3D;&#x7BA1;Chrome&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x591A;&#x7EBF;&#x7A0B;&#x5E76;&#x884C;&#x4E0B;&#x8F7D;&#x5916;&#x90E8;&#x8D44;&#x6E90;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;script file&#x3001;image&#x3001;frame&#x7B49;&#xFF08;css&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x5728;IE&#x4E2D;&#x4E0D;&#x963B;&#x585E;&#x4E0B;&#x8F7D;&#xFF0C;&#x4F46;Firefox&#x963B;&#x585E;&#x4E0B;&#x8F7D;&#xFF09;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x7531;&#x4E8E;js&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5C3D;&#x7BA1;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x4EE5;&#x5E76;&#x53D1;&#x52A0;&#x5FEB;js&#x7684;&#x4E0B;&#x8F7D;&#xFF0C;&#x4F46;&#x5FC5;&#x987B;&#x4F9D;&#x6B21;&#x6267;&#x884C;&#x3002;&#x6240;&#x4EE5;chrome&#x4E2D;image&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x662F;&#x53EF;&#x4EE5;&#x5E76;&#x53D1;&#x4E0B;&#x8F7D;&#x7684;&#xFF0C;&#x4F46;&#x5916;&#x90E8;js&#x6587;&#x4EF6;&#x5E76;&#x53D1;&#x4E0B;&#x8F7D;&#x6CA1;&#x6709;&#x591A;&#x5927;&#x610F;&#x4E49;&#x3002;<br>&#x8981;&#x5B9E;&#x73B0;&#x975E;&#x963B;&#x585E;js&#xFF08;non-blocking javascript&#xFF09;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;1. html5 2. &#x52A8;&#x6001;&#x52A0;&#x8F7D;js<p></p>
+<p>&#x9996;&#x5148;&#x4E00;&#x79CD;&#x529E;&#x6CD5;&#x662F;HTML5&#x7684;defer&#x548C;async&#x5173;&#x952E;&#x5B57;&#xFF1A;</p>
+<p>defer<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;foo.js&quot;</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>async<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;foo.js&quot;</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>&#x7136;&#x540E;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x52A8;&#x6001;&#x52A0;&#x8F7D;js&#xFF1A;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</div><div class="line">    <span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">&quot;script&quot;</span>);</div><div class="line">    script.type = <span class="string">&quot;text/javascript&quot;</span>;</div><div class="line">    script.src = <span class="string">&quot;foo.js&quot;</span>;</div><div class="line">    <span class="keyword">var</span> head = <span class="literal">true</span>; <span class="comment">//&#x52A0;&#x5728;&#x5934;&#x8FD8;&#x662F;&#x5C3E;</span></div><div class="line">    <span class="keyword">if</span>(head)</div><div class="line">      <span class="built_in">document</span>.getElementsByTagName(<span class="string">&quot;head&quot;</span>)[<span class="number">0</span>].appendChild(script);</div><div class="line">    <span class="keyword">else</span></div><div class="line">      <span class="built_in">document</span>.body.appendChild(script); </div><div class="line">}, <span class="number">0</span>);</div><div class="line"> </div><div class="line"><span class="comment">//&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x52A8;&#x6001;&#x52A0;&#x8F7D;js&#x7684;&#x51FD;&#x6570;</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadJs</span>(<span class="params">jsurl, head, callback</span>)</span>{</div><div class="line">    <span class="keyword">var</span> script=<span class="built_in">document</span>.createElement(<span class="string">&apos;script&apos;</span>);</div><div class="line">    script.setAttribute(<span class="string">&quot;type&quot;</span>,<span class="string">&quot;text/javascript&quot;</span>);</div><div class="line">     </div><div class="line">    <span class="keyword">if</span>(callback){</div><div class="line">        <span class="keyword">if</span> (script.readyState){  <span class="comment">//IE</span></div><div class="line">            script.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</div><div class="line">                <span class="keyword">if</span> (script.readyState == <span class="string">&quot;loaded&quot;</span> ||</div><div class="line">                        script.readyState == <span class="string">&quot;complete&quot;</span>){</div><div class="line">                    script.onreadystatechange = <span class="literal">null</span>;</div><div class="line">                    callback();</div><div class="line">                }</div><div class="line">            };</div><div class="line">        } <span class="keyword">else</span> {  <span class="comment">//Others</span></div><div class="line">            script.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</div><div class="line">                callback();</div><div class="line">            };</div><div class="line">        }</div><div class="line">    }</div><div class="line">    script.setAttribute(<span class="string">&quot;src&quot;</span>, jsurl);</div><div class="line">     </div><div class="line">    <span class="keyword">if</span>(head)</div><div class="line">     <span class="built_in">document</span>.getElementsByTagName(<span class="string">&apos;head&apos;</span>)[<span class="number">0</span>].appendChild(script); </div><div class="line">    <span class="keyword">else</span></div><div class="line">      <span class="built_in">document</span>.body.appendChild(script); </div><div class="line"> </div><div class="line">}</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端，js/" rel="tag">#前端，js</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/19/vue-router/" rel="next" title="vue路由介绍">
+                <i class="fa fa-chevron-left"></i> vue路由介绍
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="yuyaoxia" />
+          <p class="site-author-name" itemprop="name">yuyaoxia</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yuyaoxia/" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/your-user-name" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://my.csdn.net/" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://mall.jd.com/index-614139.html" target="_blank" title="JD-SHOP">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  JD-SHOP
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://my.csdn.net/" title="CSDN" target="_blank">CSDN</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://zhaxiancheng.com" title="Zhazha" target="_blank">Zhazha</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://le.im" title="le" target="_blank">le</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Javascript是单线程的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">异步事件驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">浏览器不是单线程的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Ajax异步请求是否真的异步?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">setTimeout(func, 0)为什么有时候有用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">非阻塞js的实现（non-blocking javascript）</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yuyaoxia</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>
